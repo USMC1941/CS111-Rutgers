@@ -69,7 +69,7 @@ You should hand in the following files on sakai
 
 ### Additional resources for assignment
 
-[Card.java](Assignments/Blackjack/01_Miletone/Card.java)
+[Card.java]/Card.java)
 
-[Deck.java](Assignments/Blackjack/01_Miletone/Deck.java)
+[Deck.java](Deck.java)
 
