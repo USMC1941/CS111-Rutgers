@@ -116,8 +116,8 @@ For this assignment, you should be submitting 4 files:
 Failure to follow directions will result in point penalties.
 
 ### Additional resources for assignment
-[How-To-Use-The-IO-Module-In-Programming-Assignments.html](How-To-Use-The-IO-Module-In-Programming-Assignments.html)
+[How-To-Use-The-IO-Module-In-Programming-Assignments.html](Resources/IO/How-To-Use-The-IO-Module-In-Programming-Assignments.html)
 
-[IO.html](IO.html)
+[IO.html](Resources/IO/IO.html)
 
-[IO.java](IO.java)
+[IO.java](Resources/IO/IO.java)
