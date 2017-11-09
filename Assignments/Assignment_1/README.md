@@ -8,7 +8,7 @@ Submit problem analysis and test cases for this assignment in a file called `ass
 
 ### Problem 1 (Warmup)
 
-Write and submit your code in a file called `Sum.java`. Use the [IO module](Resources/IO/IO.java) to read inputs. Use `IO.outputIntAnswer()` to print your answer (refer to the documentation below for usage instructions).
+Write and submit your code in a file called `Sum.java`. Use the [IO module](https://github.com/USMC1941/CS111-Rutgers/blob/master/Resources/IO/IO.java) to read inputs. Use `IO.outputIntAnswer()` to print your answer (refer to the documentation below for usage instructions).
 
 Ask the user for 2 integers. Output the sum of those 2 numbers. Example:
 ```
@@ -22,7 +22,7 @@ Result: 2
 
 ### Problem 2
 
-Write and submit your code in a file called `Poly.java`. Use the [IO module](Resources/IO/IO.java) to read inputs. Use `System.out.println()` to print your answer.
+Write and submit your code in a file called `Poly.java`. Use the [IO module](https://github.com/USMC1941/CS111-Rutgers/blob/master/Resources/IO/IO.java) to read inputs. Use `System.out.println()` to print your answer.
 
 Write a program that generates a canonical-form, degree-3 (cubic) polynomial given its roots. For example, if the roots are 5, -3, and 2, the polynomial equation is
 
@@ -56,7 +56,7 @@ x^3 - 4x^2 - 11x + 30
 
 ### Problem 3
 
-Write and submit your code in a file called `Intersect.java`. Use the [IO module](Resources/IO/IO.java) to read inputs. Use `System.out.println()` to print your answer.
+Write and submit your code in a file called `Intersect.java`. Use the [IO module](https://github.com/USMC1941/CS111-Rutgers/blob/master/Resources/IO/IO.java) to read inputs. Use `System.out.println()` to print your answer.
 
 Write a program that calculates the intersection between 2 equations:
 
