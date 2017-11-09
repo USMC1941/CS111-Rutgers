@@ -113,6 +113,6 @@ Write a method called `compress()` that takes a string as input, compresses it u
 
 ## Additional resources for assignment
 
-[How-To-Use-The-IO-Module-In-Programming-Assignments.html](Resources/IO/How-To-Use-The-IO-Module-In-Programming-Assignments.html)
+[How-To-Use-The-IO-Module-In-Programming-Assignments.html](https://github.com/USMC1941/CS111-Rutgers/blob/master/Resources/IO/How-To-Use-The-IO-Module-In-Programming-Assignments.html)
 
-[IO.java](Resources/IO/IO.java)
+[IO.java](https://github.com/USMC1941/CS111-Rutgers/blob/master/Resources/IO/IO.java)
