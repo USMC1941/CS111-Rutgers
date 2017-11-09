@@ -89,4 +89,4 @@ int x = c - '0'; // this produces the number 7
 
 ## Additional resources for assignment
 
-[StringRec.java]/StringRecjava)
+[StringRec.java](StringRecjava)
