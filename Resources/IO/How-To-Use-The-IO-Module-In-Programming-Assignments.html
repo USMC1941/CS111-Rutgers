@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0148)https://content.sakai.rutgers.edu/access/content/group/aee6dcbc-06ac-4a57-9b55-d1c6c47fa39e/How-To-Use-The-IO-Module-In-Programming-Assignments.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css"> 
+    <title>How-To-Use-The-IO-Module-In-Programming-Assignments.html</title>
+    <link href="./How-To-Use-The-IO-Module-In-Programming-Assignments_files/tool_base.css" type="text/css" rel="stylesheet" media="all">
+    <link href="./How-To-Use-The-IO-Module-In-Programming-Assignments_files/tool.css" type="text/css" rel="stylesheet" media="all">
+    <script type="text/javascript" src="./How-To-Use-The-IO-Module-In-Programming-Assignments_files/headscripts.js.download"></script>
+<script type="text/javascript" src="./How-To-Use-The-IO-Module-In-Programming-Assignments_files/kaltura-upgrade.js.download"></script>    <style>body { padding: 5px !important; }</style>
+  </head>
+  <body>
+
+<title>How to use the IO module in programming assignments</title>
+
+
+<h1>How to use the IO module in programming assignments</h1>
+
+<h2>Overview</h2>
+
+For each programming assignment that requires direct input from or output to a human user,
+you should use the IO module as described below.
+When we grade your programs,
+we will replace this IO module with a different one,
+which interacts with our grading program rather than with a human user.
+This allows us to grade your programs automatically.
+
+<p>Make sure you place the file IO.java into the same folder as your program.
+
+</p><h2>Input</h2>
+
+<ol>
+
+<li>Use the IO module to obtain inputs.
+
+</li><li>Read the inputs in the precise order specified in the assignment.
+
+</li><li>Use the correct input method for the type of input you need.
+For example, if you need an integer, use readInt, not readDouble.
+
+</li></ol>
+
+<h2>Output</h2>
+
+<ol>
+
+<li>
+<font size="+2">Use the methods of the IO module to output your FINAL ANSWERS ONLY.</font>
+
+</li><li>
+<font size="+2">Do NOT use the IO module to print messages asking for input, nor for debugging statements.</font>
+
+</li><li>
+<font size="+2">Anything your program prints using System.out will be ignored.</font>
+<p>If you wish, you may use System.out to print
+input prompts, verbose error messages, and debugging statements.
+This is entirely optional.
+All such statements will be ignored by the grading program.
+
+</p></li><li>Generate the outputs in the precise order specified in the assignment.
+
+</li><li>Use the correct output method for the type of output you produce.
+For example, if you need to output an integer, use outputIntAnswer, not outputDoubleAnswer.
+
+</li></ol>
+
+<p>The following table shows when you should and when you should not use the IO module for output:
+
+</p><table border="1" cellpadding="8">
+<tbody><tr>
+<th>What you are printing</th>
+<th>Is this required?</th>
+<th>What you should use to print</th>
+</tr>
+
+<tr>
+<td>Prompt messages for input</td>
+<td>No</td>
+<td>System.out</td>
+</tr>
+
+<tr>
+<td>Final answers</td>
+<td>Yes</td>
+<td>IO.output___Answer</td>
+</tr>
+
+<tr>
+<td>Debugging statements</td>
+<td>No</td>
+<td>System.out</td>
+</tr>
+</tbody></table>
+
+<h2>Error conditions</h2>
+
+Use the reportBadInput method of the IO module to signal error conditions.
+reportBadInput does not halt the program - you must still halt it yourself,
+if that is required.
+
+<h2>Examples</h2>
+
+<h3>Problem: Weight conversion</h3>
+
+Write your code in the file Convert.java.
+
+<p>Your program should convert a weight in pounds to a weight in kilograms.
+
+</p><p><font color="red">Solution:</font>
+
+</p><pre>public class Convert
+{
+	public static void main(String[] args)
+	{
+		double lbs, kgs;
+
+		lbs = IO.readDouble();
+
+		if (lbs &lt;= 0) {
+			IO.reportBadInput();
+		} else {
+			kgs = lbs / 2.2;
+			IO.outputDoubleAnswer(kgs);
+		}
+	}
+}
+</pre>
+
+<p><font color="red">Alternate solution:</font>
+
+</p><pre>public class Convert
+{
+	public static void main(String[] args)
+	{
+		double lbs, kgs;
+
+		System.out.println("Enter weight in lbs"); // ignored by grading program
+		lbs = IO.readDouble();
+
+		if (lbs &lt;= 0) {
+			System.out.println("Weight must be positive");  // ignored by grading program
+			IO.reportBadInput();
+		} else {
+			kgs = lbs / 2.2;
+			System.out.println("Weight in kgs: " + kgs); // ignored by grading program
+			IO.outputDoubleAnswer(kgs);
+		}
+	}
+}
+</pre>
+
+<h3>Problem: Area of rectangle</h3>
+
+Write your code in the file Rectangle.java.
+
+<p>Your program should compute the area of a rectangle whose sides have whole-number
+lengths.
+
+</p><p><font color="red">Solution:</font>
+
+</p><pre>public class Rectangle
+{
+	public static void main(String[] args)
+	{
+		int length, width, area;
+
+		length = IO.readInt();
+		if (length &lt;= 0) {
+			IO.reportBadInput();
+			return;
+		}
+
+		width = IO.readInt();
+		if (width &lt;= 0) {
+			IO.reportBadInput();
+			return;
+		}
+
+		area = length * width;
+		IO.outputIntAnswer(area);
+	}
+}
+
+<p>
+
+  
+
+</p></pre></body></html>

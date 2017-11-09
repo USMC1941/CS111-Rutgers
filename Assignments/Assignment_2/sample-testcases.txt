@@ -1,0 +1,68 @@
+Name: Juan L. Evan
+Assignment 0
+
+Problem 1 (convert lbs to kgs)
+---------
+Test case 1:
+Inputs:
+weight 220
+Expected output:
+weight 100
+Actual output:
+weight 100
+
+Test case 2:
+Inputs:
+weight -220
+Expected output:
+error
+Actual output:
+weight -100 (this is a bug in my program)
+
+
+Problem 2 (area of rectangle)
+---------
+Test case 1:
+Inputs:
+length 25
+width 40
+Expected output:
+area 1000
+Actual output:
+area 1000
+
+Test case 2:
+Inputs:
+length -25
+width 40
+Expected output:
+error
+Actual output:
+error
+
+Test case 3:
+Inputs:
+length 0
+width 40
+Expected output:
+error
+Actual output:
+error
+
+Test case 4:
+Inputs:
+length 25
+width -40
+Expected output:
+error
+Actual output:
+error
+
+Test case 5:
+Inputs:
+length 25
+width 0
+Expected output:
+error
+Actual output:
+error
