@@ -111,8 +111,8 @@ for dealer, finish round (discard cards)
 
 ## Additional resources for assignment
 
-* [Card.java](Assignments/Blackjack/04_Milestone/Card.java)
-* [Deck.java](Assignments/Blackjack/04_Milestone/Deck.java)
-* [blackjack.zip](Assignments/Blackjack/04_Milestone/blackjack.zip)
-* [GIO.html](Assignments/Blackjack/04_Milestone/GIO.html)
-* [BlackjackWindow.html](Assignments/Blackjack/04_Milestone/BlackjackWindow.html)
+* [Card.java](Card.java)
+* [Deck.java](Deck.java)
+* [blackjack.zip](blackjack.zip)
+* [GIO.html](GIO.html)
+* [BlackjackWindow.html](BlackjackWindow.html)
