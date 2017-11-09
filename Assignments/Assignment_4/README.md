@@ -53,10 +53,10 @@ MatrixOps.java
 
 ## Additional resources for assignment
 
-[MatrixDriver.java](Assignments/Assignment_4/MatrixDriver.java)
+[MatrixDriver.java](MatrixDriver.java)
 
-[MatrixOps.java](Assignments/Assignment_4/MatrixOps.java)
+[MatrixOps.java](MatrixOps.java)
 
-[m1.txt](Assignments/Assignment_4/m1.txt)
+[m1.txt](m1.txt)
 
-[m2.txt](Assignments/Assignment_4/m2.txt)
+[m2.txt](m2.txt)
