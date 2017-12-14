@@ -1,5 +1,5 @@
 # CS111-Rutgers
-CS 112 Introduction to Computer Science at Rutgers University
+CS 111 Introduction to Computer Science at Rutgers University
 
 Professor Sesh Venugopal
 
