@@ -54,7 +54,11 @@ Write your code in the file `StringRec.java`. For this problem, the following re
 
 Complete the following method:
 
-`public static String decompress(String compressedText)`: Decompress the input text, which has been compressed using the RLE algorithm (previous hw assignment):
+```java
+public static String decompress(String compressedText)
+```
+
+Decompress the input text, which has been compressed using the RLE algorithm (previous hw assignment):
 
 >  Run-length encoding (RLE) is a simple "compression algorithm" (an algorithm which takes a block of data and reduces its size, producing a block that contains the same information in less space). It works by replacing repetitive sequences of identical data items with short "tokens" that represent entire sequences. Applying RLE to a string involves finding sequences in the string where the same character repeats. Each such sequence should be replaced by a "token" consisting of:
 > 1. the number of characters in the sequence
@@ -75,14 +79,14 @@ You may assume that the character counts will be single-digit numbers (a charact
 
 Hint #1: remember that characters are represented by numeric codes. You can decrement a character variable as follows:
 
-```
+```java
 char c = '7';
 c--;           // c will now hold the character '6'
 ```
 
 Hint #2: You probably will not need to use this hint for this problem. However, a fast way to convert a digit character into the numeric value of the digit is to subtract the character code for the digit zero:
 
-```
+```java
 char c = '7';    // this has the character code 55, not 7
 int x = c - '0'; // this produces the number 7
 ```
