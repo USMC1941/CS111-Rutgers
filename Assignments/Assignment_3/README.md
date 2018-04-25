@@ -21,7 +21,7 @@ You may find some or all of the following methods of the [Character](https://doc
 
 **Remember that a character is not an object in Java, so you cannot invoke methods on a character in the same way that you would on a string**. You call methods of this module as in this example:
 
-```
+```java
 char c = 'a';
 char c2 = Character.toUpperCase(c);
 System.out.println(c2); // prints 'A'
@@ -52,7 +52,7 @@ You may also need to use some or all of the following [String](https://docs.orac
 
 Write your code in the file `PigLatin.java`. The graders will ignore your main method. You may write your own main method to test your code. Your code should go into a method with the following signature:
 
-```
+```java
 public static String translate (String original){}
 ```
 
@@ -69,7 +69,7 @@ Write your method so that it returns the pig latin translated original string. *
 
 Write your code in the file `WordCount.java`. The graders will ignore your main method. You may write your own main method to test your code. Your code should go into a method with the following signature:
 
-```
+```java
 public static int countWords(String original, int minLength){}
 ```
 
@@ -83,7 +83,7 @@ Hint: write a method that counts the number of letters (and ignores punctuation)
 
 Write your code in the file `Compress.java`. The graders will ignore your main method. You may write your own main method to test your code. Your code should go into a method with the following signature:
 
-```
+```java
 public static String compress (String original){}
 ```
 
