@@ -1,24 +1,24 @@
 // Definition of calendar object. A calendar keeps a chronological list of events/appointments,
 // and allows adds, deletes, and modifications of events
 public class Calendar {
-	private String username;
-	private Event[] events;   
-	private int size;   // number of actual events in the array
-	
-	public Calendar(String username, int maxEvents) {   
+	private String  username;
+	private Event[] events;
+	private int     size;   // number of actual events in the array
+
+	public Calendar(String username, int maxEvents) {
 		this.username = username;
 		events = new Event[maxEvents];
 		size = 0;
 	}
-	
+
 	public String getUsername() {
 		return username;
 	}
-	
+
 	public int getSize() {
 		return size;
 	}
-	
+
 	// adds a new event in chronological order
 	// if this conflicts with an existing event, a warning message is 
 	// printed, and the user has the option to go ahead with the add or cancel it
@@ -28,11 +28,12 @@ public class Calendar {
 			return false;
 		}
 		// loop as long as events in list are before the new event
-		int i=0;
+		int i = 0;
 		while (i < size) {
 			if (events[i].before(event)) {
 				i++;
-			} else {
+			}
+			else {
 				break;
 			}
 		}
@@ -41,22 +42,22 @@ public class Calendar {
 			size++;
 			return true;
 		}
-		
+
 		// check if there is a conflict
 		if (!events[i].conflictsWith(event)) {
 			// add at i after moving everything from i to size-1 one spot over to the right
-			for (int j=size-1; j >= i; j--) {
-				events[j+1] = events[j];
+			for (int j = size - 1; j >= i; j--) {
+				events[j + 1] = events[j];
 			}
 			events[i] = event;
 			size++;
 			return true;
 		}
-		
+
 		// conflict, resolve it
-		return resolveConflict(i,event);
+		return resolveConflict(i, event);
 	}
-	
+
 	private boolean resolveConflict(int i, Event event) {
 		System.out.println(event + " conflicts with one or more existing events");
 		System.out.print("Do you want to (a)dd or (c)ancel? ");
@@ -67,15 +68,15 @@ public class Calendar {
 		}
 		if (ch == 'c') {  // return without adding
 			return false;
-		} 
+		}
 		// plug this event in the correct chronological place, checking minutes and seconds
-		int eventSeconds = event.getTime().getMin()*60 + event.getTime().getSec();	
+		int eventSeconds = event.getTime().getMin() * 60 + event.getTime().getSec();
 		while (i < size) {
-			Time tm = events[i].getTime();
-			int iSeconds = tm.getMin()*60 + tm.getSec();
+			Time tm       = events[i].getTime();
+			int  iSeconds = tm.getMin() * 60 + tm.getSec();
 			if (eventSeconds <= iSeconds) {  // insert at i after moving stuff over
-				for (int j=size-1; j >= i; j--) {
-					events[j+1] = events[j];
+				for (int j = size - 1; j >= i; j--) {
+					events[j + 1] = events[j];
 				}
 				events[i] = event;
 				size++;
@@ -87,12 +88,12 @@ public class Calendar {
 		events[i] = event;
 		size++;
 		return true;
-	}	
+	}
 
 	// deletes the given event
 	// if event does not exist, returns false, otherwise true
 	public boolean deleteEvent(Event event) {
-		int i=0;
+		int i = 0;
 		while (i < size) {
 			if (events[i].equals(event)) {
 				break;
@@ -102,16 +103,16 @@ public class Calendar {
 		if (i == size) {  // no match
 			return false;
 		}
-		for (int j=i+1; j < size; j++) {
-			events[j-1] = events[j];
+		for (int j = i + 1; j < size; j++) {
+			events[j - 1] = events[j];
 		}
 		size--;
 		return true;
 	}
-	
+
 	// deletes all events for given date
 	public void deleteAllEvents(Date date) {
-		int i=0;
+		int i = 0;
 		while (i < size) {
 			if (events[i].getDate().equals(date)) {
 				break;
@@ -123,25 +124,26 @@ public class Calendar {
 		}
 		// loop through this and all subsequent matches with same date
 		int j = i;
-		while ((j+1) < size) {
-			if (events[j+1].getDate().equals(date)) {
+		while ((j + 1) < size) {
+			if (events[j + 1].getDate().equals(date)) {
 				j++;
-			} else {
+			}
+			else {
 				break;
 			}
 		}
 		// leap frog over all intervening matches
-		int jump = j-i;
-		for (int k=j+1; k < size; k++) {
-			events[j-jump] = events[k];
+		int jump = j - i;
+		for (int k = j + 1; k < size; k++) {
+			events[j - jump] = events[k];
 		}
-		size -= (jump+1);
+		size -= (jump + 1);
 	}
-	
+
 	// changes original event to new event
 	// if original event is not found, returns false, otherwise true
 	public boolean modifyEvent(Event originalEvent, Event newEvent) {
-		for (int i=0; i < size; i++) {
+		for (int i = 0; i < size; i++) {
 			if (events[i].equals(originalEvent)) {
 				events[i] = newEvent;
 				return true;
@@ -149,25 +151,25 @@ public class Calendar {
 		}
 		return false;
 	}
-	
+
 	// returns all events in calendar
 	public String events() {
 		if (size == 0) {  // no events
 			return "\n";
 		}
-		
+
 		// loop through all events in calendar and build string
 		StringBuilder sb = new StringBuilder();
-		for (int i=0; i < size; i++) {
+		for (int i = 0; i < size; i++) {
 			sb.append(events[i]);
-			sb.append("\n");		
+			sb.append("\n");
 		}
 		return sb + "";
 	}
-	
+
 	// returns all events for a day, one per line
 	public String eventsForDay(Date date) {
-		int i=0;
+		int i = 0;
 		while (i < size) {
 			if (events[i].getDate().equals(date)) {
 				break;
@@ -177,25 +179,26 @@ public class Calendar {
 		if (i == size) {  // no matches
 			return "\n";
 		}
-		
+
 		// loop through this and all subsequent matches with same date
 		StringBuilder sb = new StringBuilder();
 		while (i < size) {
 			if (events[i].getDate().equals(date)) {
 				sb.append(events[i]);
-				sb.append("\n");	
+				sb.append("\n");
 				i++;
-			} else {
+			}
+			else {
 				break;
 			}
 		}
 		return sb.toString();  // or sb + ""
 	}
-	
+
 	// returns string representation of entire calendar
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		for (int i=0; i < size; i++) {
+		for (int i = 0; i < size; i++) {
 			sb.append(events[i]);
 			sb.append("\n");
 		}

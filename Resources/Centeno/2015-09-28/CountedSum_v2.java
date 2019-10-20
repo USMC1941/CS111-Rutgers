@@ -15,6 +15,6 @@ public class CountedSum_v2 {
 			int number = IO.readInt();
 			sum = sum + number;
 		}
-		System.out.println("Sum is "+sum);
+		System.out.println("Sum is " + sum);
 	}
 }

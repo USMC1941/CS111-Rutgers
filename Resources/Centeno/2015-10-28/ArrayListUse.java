@@ -13,14 +13,14 @@ public class ArrayListUse {
 			System.out.println(index + " - " + i);
 		}
 		System.out.println("----- " + arr.size());
-		
-		arr.add(0,"pear");
+
+		arr.add(0, "pear");
 		for (String i : arr) {
 			int index = arr.indexOf(i);
 			System.out.println(index + " - " + i);
 		}
 		System.out.println("----- " + arr.size());
-		
+
 		arr.remove("apple");
 		for (String i : arr) {
 			int index = arr.indexOf(i);

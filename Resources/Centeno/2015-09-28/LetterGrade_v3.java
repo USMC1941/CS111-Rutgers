@@ -23,16 +23,20 @@ public class LetterGrade_v3 {
 			if (grade >= 90) {
 				/* 90 - 100 */
 				System.out.println("A");
-			} else if (grade >= 80) {
+			}
+			else if (grade >= 80) {
 				/* 80 - 89 */
 				/* Execution only gets in here only if grade is not >= 90 AND >= 80 */
 				System.out.println("B");
-			} else if (grade >= 70) {
+			}
+			else if (grade >= 70) {
 				/* 70 - 79 */
 				System.out.println("C");
-			} else if (grade >= 60) {
+			}
+			else if (grade >= 60) {
 				System.out.println("D");
-			} else {
+			}
+			else {
 				System.out.println("F");
 			}
 			students--;

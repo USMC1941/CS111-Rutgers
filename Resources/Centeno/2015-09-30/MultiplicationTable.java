@@ -3,7 +3,7 @@ package examples;
 public class MultiplicationTable {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println("Enter number of rows:");
 		int numRows = IO.readInt();
 		System.out.println("Enter number of cols:");
@@ -17,7 +17,7 @@ public class MultiplicationTable {
 			int col = 1;
 			while (col <= numCols) {
 				int result = row * col;
-				System.out.printf("%d  ",result);
+				System.out.printf("%d  ", result);
 				col++;
 			}
 			System.out.println();

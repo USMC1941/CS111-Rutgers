@@ -3,7 +3,7 @@ package examples;
 public class SequenceMax {
 
 	public static void main(String[] args) {
-	
+
 		System.out.println("Enter terminating value:");
 		int terminator = IO.readInt();
 		System.out.println("Enter next value:");
@@ -19,7 +19,8 @@ public class SequenceMax {
 			if (number != terminator && number > max) {
 				max = number;
 			}
-		} while (number != terminator);
-		System.out.println("Maximum is "+max);
+		}
+		while (number != terminator);
+		System.out.println("Maximum is " + max);
 	}
 }

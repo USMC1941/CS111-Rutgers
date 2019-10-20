@@ -6,7 +6,7 @@ package examples;
 public class LetterGrade_v1 {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println("Enter student grade:");
 		double grade = IO.readDouble();
 
@@ -18,16 +18,20 @@ public class LetterGrade_v1 {
 		if (grade >= 90) {
 			/* 90 - 100 */
 			System.out.println("A");
-		} else if (grade >= 80) {
+		}
+		else if (grade >= 80) {
 			/* 80 - 89 */
 			/* Execution only gets in here only if grade is not >= 90 AND >= 80 */
 			System.out.println("B");
-		} else if (grade >= 70) {
+		}
+		else if (grade >= 70) {
 			/* 70 - 79 */
 			System.out.println("C");
-		} else if (grade >= 60) {
+		}
+		else if (grade >= 60) {
 			System.out.println("D");
-		} else {
+		}
+		else {
 			System.out.println("F");
 		}
 	}

@@ -3,7 +3,7 @@ package examples;
 public class Scope {
 
 	public static void main(String[] args) {
-		
+
 		int y = 10;
 		while (y > 5) {
 			int x = 0;
@@ -13,7 +13,7 @@ public class Scope {
 			y--;
 			/* the scope of x ends here */
 		}
-		
+
 		while (y < 5) {
 			int x = 3; /* Another x */
 			y++;
