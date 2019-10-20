@@ -18,11 +18,12 @@ Make sure you place the file `IO.java` into the same folder as your program.
 5. Use the correct output method for the type of output you produce. For example, if you need to output an integer, use `outputIntAnswer`, not `outputDoubleAnswer`.
 
 The following table shows when you should and when you should not use the IO module for output:
+
 |   What you are printing   | Is this required? | What you should use to print |
 |:-------------------------:|:-----------------:|:----------------------------:|
-| Prompt messages for input |         No        |          `System.out`          |
-|       Final answers       |        Yes        |      `IO.output___Answer`      |
-|    Debugging statements   |         No        |          `System.out`          |
+| Prompt messages for input |         No        |         `System.out`         |
+|       Final answers       |        Yes        |     `IO.output___Answer`     |
+|    Debugging statements   |         No        |         `System.out`         |
 
 ## Error conditions
 Use the `reportBadInput` method of the IO module to signal error conditions. `reportBadInput` does not halt the program - you must still halt it yourself, if that is required.
