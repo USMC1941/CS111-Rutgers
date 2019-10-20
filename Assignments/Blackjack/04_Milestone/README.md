@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Attached is a GUI Framework and documentation on how to use it. You will get a maximum of 20 pts for your implementation. Much of the code can be refactored from your implementation in MS3. (Especially BlackJack.main() and the Deck/Player/Hand classes
+Attached is a GUI Framework and documentation on how to use it. You will get a maximum of 20 pts for your implementation. Much of the code can be refactored from your implementation in MS3. (Especially `BlackJack.main()` and the Deck/Player/Hand classes
  
 
 You will be given a shell of a GUI. Here you can fill in as much or as little of your game engine that you wish. 20 pts is only for the base GUI (meaning the player can choose to hit/stand, and you report the result of the round). If you implement any of the other features you’ve developed in the sections above as a GUI, you are welcome to, but it is for your own enjoyment and sense of fulfillment.
@@ -108,11 +108,3 @@ for each player
 	finish round (announce results, discard cards)
 for dealer, finish round (discard cards)
 ```
-
-## Additional resources for assignment
-
-* [Card.java](Card.java)
-* [Deck.java](Deck.java)
-* [blackjack.zip](blackjack.zip)
-* [GIO.html](GIO.html)
-* [BlackjackWindow.html](BlackjackWindow.html)

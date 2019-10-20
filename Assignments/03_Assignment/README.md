@@ -109,10 +109,3 @@ q9w5e2rt5y4qw2Er3T
 In the compressed string, "9w" represents a sequence of 9 consecutive lowercase "w" characters. "5e" represents 5 consecutive lowercase "e" characters, etc.
 
 Write a method called `compress()` that takes a string as input, compresses it using RLE, and returns the compressed string. Case matters - uppercase and lowercase characters should be considered distinct. **You may assume that there are no digit characters in the input string. There are no other restrictions on the input - it may contain spaces or punctuation**. There is no need to treat non-letter characters any differently from letters.
-
-
-## Additional resources for assignment
-
-[How-To-Use-The-IO-Module-In-Programming-Assignments.html](https://github.com/USMC1941/CS111-Rutgers/blob/master/Resources/IO/How-To-Use-The-IO-Module-In-Programming-Assignments.html)
-
-[IO.java](https://github.com/USMC1941/CS111-Rutgers/blob/master/Resources/IO/IO.java)

@@ -115,10 +115,4 @@ Submit the following files:
 
 ## Additional resources for assignment
 
-[How-To-Use-The-IO-Module-In-Programming-Assignments.html](https://github.com/USMC1941/CS111-Rutgers/blob/master/Resources/IO/How-To-Use-The-IO-Module-In-Programming-Assignments.html)
-
-[IO.html](https://github.com/USMC1941/CS111-Rutgers/blob/master/Resources/IO/IO.html)
-
-[IO.java](https://github.com/USMC1941/CS111-Rutgers/blob/master/Resources/IO/IO.java)
-
 [sample-testcases.txt](sample-testcases.txt)

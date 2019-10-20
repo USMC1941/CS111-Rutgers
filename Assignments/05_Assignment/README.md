@@ -36,11 +36,8 @@ For each problems segment given below, do the following:
     * Dropping insignificant terms.
     * Dropping constant coefficients.
 
-<br>
 a. Determine if 2 arrays contain the same elements
 
 b. Counting total number characters that have a duplicate within a string (i.e. "gigi the gato" would result in 7 (g x 3 + i x 2 + t x 2)
 
 c. Finding an empty row in a 2-D array where empty is defined as an element with a 0 entry.
-
-

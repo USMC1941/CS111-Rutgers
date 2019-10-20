@@ -50,7 +50,7 @@ In order to help you make forward progress, you MUST complete one of each of the
 
 #### Week 1:
 
-1. Complete the class definitions for Card.java and Deck.java. Write a main() method in a file called Blackjack.java that shows you have tested your Card.java and Deck.java code thoroughly. The description for the instance methods and fields are in the files attached to this assignment.
+1. Complete the class definitions for `Card.java` and `Deck.java`. Write a main() method in a file called Blackjack.java that shows you have tested your `Card.java` and `Deck.java` code thoroughly. The description for the instance methods and fields are in the files attached to this assignment.
 
 2. Write in a design document (text file) your general algorithm for how you would create a simple blackjack game main loop with wagering for two players (and the dealer). Describe your inputs and outputs as well as any error conditions that may occur. You should include when you would create objects and when you would call instance methods. Your algorithm should cover all of the rules listed above for the game of blackjack. You MAY include a flowchart to better describe your algorithm. You should (minimally) answer the following questions:
     * What is the condition of the main loop? When does it stop?
@@ -63,13 +63,13 @@ In order to help you make forward progress, you MUST complete one of each of the
 You should hand in the following files on sakai
 * `Card.java` (completed)
 * `Deck.java` (completed)
-* `Blackjack.java` (completed with testing code in main())
+* `Blackjack.java` (completed with testing code in `main()`)
 * blackjack.txt (design document)
 * Any other files you need to support the above.
 
 ### Additional resources for assignment
 
-[Card.java]/Card.java)
+[Card.java](Card.java)
 
 [Deck.java](Deck.java)
 
