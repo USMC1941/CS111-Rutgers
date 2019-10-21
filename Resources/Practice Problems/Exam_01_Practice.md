@@ -29,7 +29,7 @@ Available coins are:
 * nickel (5 cents)
 * penny (1 cent)
 
-   Only print the actual bills and coins returned. Do not print unused denominations (for example, if no $10 bills are returned, do not print anything regarding $10 bills).
+Only print the actual bills and coins returned. Do not print unused denominations (for example, if no $10 bills are returned, do not print anything regarding $10 bills).
 
 Example:
 ```
