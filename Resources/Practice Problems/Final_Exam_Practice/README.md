@@ -278,7 +278,7 @@ Define appropriate fields and complete the following methods of `HotelRoom`:
 
 Constructor: Initialize a `HotelRoom` object representing a reservation for the guest with the given name, in a room of the given type, for the given number of days.
 ```java
-HotelRoom(String guestname, String roomtype, int days) (constructor)
+HotelRoom(String guestname, String roomtype, int days)
 ```
 * Reviewing a reservation
 
