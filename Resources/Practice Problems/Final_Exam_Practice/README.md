@@ -264,11 +264,13 @@ The next 2 problems are on Defining Classes.
 
 Write your code in the file [`HotelRoom.java`](HotelRoom.java).
 A `HotelRoom` object represents a reservation for a hotel room. The following types of rooms are available:
+
 |    room type   | price per night |
 |:--------------:|:---------------:|
 |     single     |      $80.00     |
 |     double     |     $120.00     |
 | business suite |     $200.00     |
+
 According to the hotel's reservation policy, if a guest checks out earlier than expected (stays for fewer days than the room was reserved for), they are charged a $5.00 cancellation fee for every day that was reserved but not used (they are not charged the full room rate for unused days). There is no charge for staying longer than the room was reserved for.
 
 Define appropriate fields and complete the following methods of `HotelRoom`:
