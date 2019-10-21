@@ -1,0 +1,49 @@
+*insert and shift
+*reverse selection sort
+
+
+strings
+-------
+Sentence
+reverseletters
+
+
+recursion
+---------
+*math
+	round to ith place
+StringRec
+	reverse
+*fractals
+	square-spiral
+
+arrays
+------
+cellphonebook
+
+2d arrays
+---------
+*tic-tac-toe/five-in-a-row
+
+efficiency
+----------
+analyze code
+	-combine arrays
+	-restarting-loop
+	-countsort
+	-recursivesum
+	-bad recursive max
+
+searching/sorting
+-----------------
+*insert using binary search
+*reverse insertion sort
+
+classes
+-------
+Point/Polygon
+
+complexnumber, fraction
+hotelroom, rentalcar
+Window
+set
