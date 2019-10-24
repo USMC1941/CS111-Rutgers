@@ -1,4 +1,7 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * CS111 input/output module. This module serves two purposes:
@@ -37,6 +40,7 @@ public class IO {
 
 	/**
 	 * Ask (and force) the user to enter text.
+	 *
 	 * @return Text entered, as a String object.
 	 */
 	public static String readString() {
@@ -52,6 +56,7 @@ public class IO {
 
 	/**
 	 * Ask (and force) the user to enter an integer.
+	 *
 	 * @return Integer entered.
 	 */
 	public static int readInt() {
@@ -71,6 +76,7 @@ public class IO {
 
 	/**
 	 * Ask (and force) the user to enter a real number.
+	 *
 	 * @return Real number entered.
 	 */
 	public static double readDouble() {
@@ -90,6 +96,7 @@ public class IO {
 
 	/**
 	 * Ask (and force) the user to enter a single character.
+	 *
 	 * @return Character entered.
 	 */
 	public static char readChar() {
@@ -117,6 +124,7 @@ public class IO {
 
 	/**
 	 * Ask (and force) the user to enter text that can be interpreted as a boolean. "true", "t", "yes", "y", "false", "f", "no", and "n" are valid responses.
+	 *
 	 * @return boolean interpretation of text entered.
 	 */
 	public static boolean readBoolean() {
@@ -144,6 +152,7 @@ public class IO {
 
 	/**
 	 * Print a string to the screen and/or send it to the grading script.
+	 *
 	 * @param s String to output.
 	 */
 	public static void outputStringAnswer(String s) {
@@ -157,6 +166,7 @@ public class IO {
 
 	/**
 	 * Print an integer to the screen and/or send it to the grading script.
+	 *
 	 * @param i Integer to output.
 	 */
 	public static void outputIntAnswer(int i) {
@@ -165,6 +175,7 @@ public class IO {
 
 	/**
 	 * Print a real number to the screen and/or send it to the grading script.
+	 *
 	 * @param d Real number to output.
 	 */
 	public static void outputDoubleAnswer(double d) {
@@ -173,6 +184,7 @@ public class IO {
 
 	/**
 	 * Print a single character to the screen and/or send it to the grading script.
+	 *
 	 * @param c Character to output.
 	 */
 	public static void outputCharAnswer(char c) {
@@ -180,8 +192,9 @@ public class IO {
 	}
 
 	/**
-	 * Boolean to output.
-	 * @param b Print a boolean to the screen (as "true" or "false") and/or send it to the grading script.
+	 * Print a boolean to the screen (as "true" or "false") and/or send it to the grading script.
+	 *
+	 * @param b Boolean to output.
 	 */
 	public static void outputBooleanAnswer(boolean b) {
 		System.out.println("RESULT: " + b);
