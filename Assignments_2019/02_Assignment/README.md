@@ -1,8 +1,8 @@
 # Hello, world – 20 course points
 
-The purpose of this assignment is to introduce you to programming in Java and to familiarize you with the process of preparing and submitting programming assignments. You will learn how to use the VScode editor to edit Java files, use the command line to compile and execute your programs, as well as submit your assignment on Autolab.
+The purpose of this assignment is to introduce you to programming in Java and to familiarize you with the process of preparing and submitting programming assignments. You will learn how to use the VSCode editor to edit Java files, use the command line to compile and execute your programs, as well as submit your assignment on Autolab.
 
-Refer to our Programming Assignments FAQ for instructions on how to install VScode, how to use the command line and how to submit your assignments.
+Refer to our [Programming Assignments FAQ](https://introcs.cs.rutgers.edu/assignment-faq/) for instructions on how to install VSCode, how to use the command line and how to submit your assignments.
 
 ## Programming
 Write 3 programs and submit on Autolab.
@@ -55,9 +55,8 @@ Observe the following rules:
 ## Before submission
 
 4. Collaboration policy. Read our collaboration policy [here](https://introcs.cs.rutgers.edu/#academic-integrity).
-5. Writeup. Use your preferred text editor to type your answers, and then save the file in PDF format. We will only grade typed assignments and in PDF format. You will use [Gradescope](https://www.gradescope.com/) to submit your assignment. If you have not yet used Gradescope, go to your scarletmail inbox and look for an email from Gradescope with instructions on how to access your account.
-6. On Gradescope read. Help − > Student Workflow − > Submitting a PDF for instructions on how to submit your PDF file.
-7. Submitting the assignment. Submit your assignment via the Web submission system called Gradescope. To do this, click the Assignments link from the course website; click the Submit link for that assignment.
+5. Update `@author`. Update the `@author` tag of the files with your name, email and netid.
+6. Submitting the assignment. Submit `HelloWorld.java`, `WindChill.java`, and `OrderCheck.java` separately via the web submission system called Autolab. To do this, click the Assignments link from the course website; click the Submit link for that assignment.
 
 ## Getting help
 

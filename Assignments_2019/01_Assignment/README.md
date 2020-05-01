@@ -29,9 +29,11 @@ For each of the following problems provide:
    is a multiple of 11.
 
    Write an algorithm that reads an integer number of 9 digits and displays the checksum digit of the ISBN.
-   - Hint 1: to extract the rightmost digit of a number use: COMPUTE digit AS number MODULUS 10
-   - Hint 2: to remove the rightmost digit of a number use: COMPUTE number AS number / 10
-   - Hint 3: for full credit use a loop to compute the sum
+
+   Hints:
+   1. To extract the rightmost digit of a number use: COMPUTE digit AS number MODULUS 10
+   2. To remove the rightmost digit of a number use: COMPUTE number AS number / 10
+   3. For full credit use a loop to compute the sum
 
    Assume the input value is a 9-digit positive integer. Also assume that the input is a valid ISBN number without the checksum digit.
 
