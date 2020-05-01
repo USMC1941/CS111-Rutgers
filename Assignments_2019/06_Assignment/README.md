@@ -108,7 +108,7 @@ Observe the following rules:
    char c = '7';
    c--; // c will now hold the character '6'
    ```
-   2. You can check if a character is a digit by using the isDigit() method from the Character class as follows:
+   2. You can check if a character is a digit by using the [`isDigit(char)`](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Character.html#isDigit(char)) method from the Character class as follows:
    ```java
    char c = '7';
    Character.isDigit(c); // returns true
