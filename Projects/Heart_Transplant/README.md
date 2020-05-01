@@ -5,7 +5,7 @@ This assignment consists of creating an abstract data type called `HeartTranspla
 Refer to our [Programming Assignments FAQ](https://introcs.cs.rutgers.edu/assignment-faq/) for instructions on how to install VSCode, how to use the command line and how to submit your assignments.
 
 ## Programming
-Update and submit the file `HeartTransplant.java` on Autolab
+Update and submit the file [`HeartTransplant.java`](HeartTransplant/src/HeartTransplant.java) on Autolab
 
 Observe the following rules:
 - DO NOT use [`System.exit()`](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/System.html#exit(int)).
