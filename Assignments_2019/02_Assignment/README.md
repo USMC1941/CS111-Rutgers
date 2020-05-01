@@ -17,7 +17,7 @@ Observe the following rules:
 - DO NOT change the class name
 - DO NOT change the headers of ANY of the given methods
 - DO NOT add any new class fields
-- DO NOT use [System.exit()](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/System.html#exit(int))
+- DO NOT use [`System.exit()`](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/System.html#exit(int))
 - Observe the examples output, display only what the problem is asking for
 
 1. *Hello, World* [5 points]. This is everyone’s first program. Write a program `HelloWorld.java` that, when run, displays the phrase: `Hello, World`.

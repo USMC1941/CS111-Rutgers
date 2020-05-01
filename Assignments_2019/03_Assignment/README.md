@@ -14,7 +14,7 @@ Observe the following rules:
 - DO NOT change the class name
 - DO NOT change the headers of ANY of the given methods
 - DO NOT add any new class fields
-- DO NOT use [System.exit()](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/System.html#exit(int))
+- DO NOT use [`System.exit()`](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/System.html#exit(int))
 - Observe the examples output, display only what the problem is asking for
 - DO NOT print other messages, follow the examples for each problem.
 
