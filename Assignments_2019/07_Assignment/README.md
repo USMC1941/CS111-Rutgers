@@ -53,7 +53,6 @@ The file [`Searchsort.java`](SearchSort.java) contains the implementations of se
 
    For the comparison, refer to the lines in the Insertion Sort algorithm:
    ```java
-   // ...
    public static void insertionSort(char[] chars) {
       // ...
       if (chars[j - 1] > chars[j]) {
@@ -70,7 +69,6 @@ The file [`Searchsort.java`](SearchSort.java) contains the implementations of se
 
    For the comparisons, refer to the lines in the Merge sort algorithm:
    ```java
-   //...
    public static void merge(char[] chars, int l, int m, int r) {
       // ...
       if (chars[j] < b[i]) {
