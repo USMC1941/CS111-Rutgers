@@ -6,7 +6,7 @@ Refer to our [Programming Assignments FAQ](https://introcs.cs.rutgers.edu/assign
 
 ## Programming
 
-Write 2 programs and submit on Autolab. We provide the files `PolygonTransform.java`, and `Sierpinski.java`. For each problem update and submit the corresponding file.
+Write 2 programs and submit on Autolab. We provide the files [`PolygonTransform.java`](PolygonTransform.java), and [`Sierpinski.java`](Sierpinski.java). For each problem update and submit the corresponding file.
 
 Observe the following rules:
 - DO NOT add the project or package statements.
@@ -47,7 +47,7 @@ Observe the following rules:
    Write a two-dimensional transformation library by implementing the following API:
    ```java
    public class PolygonTransform {
-      
+
       /**
       * Returns a new array object that is an exact copy of the given array.
       * The given array is not mutated.
