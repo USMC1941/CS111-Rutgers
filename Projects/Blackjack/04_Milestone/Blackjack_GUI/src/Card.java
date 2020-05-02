@@ -1,4 +1,6 @@
-// This class represents one playing card.
+/**
+ * This class represents one playing card.
+ */
 public class Card {
    // Card suits (provided for your convenience - use is optional)
    public static final int SPADES   = 0;
@@ -24,38 +26,60 @@ public class Card {
 
    // define fields here
 
-   // This constructor builds a card with the given suit and face, turned face down.
+   /**
+    * This constructor builds a card with the given suit and face, turned face down.
+    * @param cardSuit Card suit
+    * @param cardFace Card face
+    */
    public Card(int cardSuit, int cardFace) {
       // complete this method
    }
 
-   // This method retrieves the suit (spades, hearts, etc.) of this card.
+   /**
+    * This method retrieves the suit (spades, hearts, etc.) of this card.
+    * @return Card suit
+    */
    public int getSuit() {
       return 0; // replace this line with your code
    }
 
    // This method retrieves the face (ace through king) of this card.
+
+   /**
+    * This method retrieves the face (ace through king) of this card.
+    * @return Face of card
+    */
    public int getFace() {
       return 0; // replace this line with your code
    }
 
-   // This method retrieves the numerical value of this card
-   // (usually same as card face, except 1 for ace and 10 for jack/queen/king)
+   /**
+    * This method retrieves the numerical value of this card
+    * (usually same as card face, except 1 for ace and 10 for jack/queen/king)
+    * @return Value of card
+    */
    public int getValue() {
       return 0; // replace this line with your code
    }
 
-   // This method determines whether the front of the card should be visible.
+   /**
+    * This method determines whether the front of the card should be visible.
+    * @return True if card is face up
+    */
    public boolean isFaceUp() {
       return false; // replace this line with your code
    }
 
-   // This method records that the front of the card should be visible.
+   /**
+    * This method records that the front of the card should be visible.
+    */
    public void turnFaceUp() {
       // complete this method
    }
 
-   // This method records that only the back of the card should be visible.
+   /**
+    * This method records that only the back of the card should be visible.
+    */
    public void turnFaceDown() {
       // complete this method
    }

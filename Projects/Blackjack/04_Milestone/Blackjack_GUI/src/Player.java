@@ -25,7 +25,6 @@ public class Player {
     * This method retrieves the player's hand of cards.
     * @return APlayer's hand of cards
     */
-   // This method retrieves the player's hand of cards.
    public Hand getHand() {
       return null; // replace this line with your code
    }
