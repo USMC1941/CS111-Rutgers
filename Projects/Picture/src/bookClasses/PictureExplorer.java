@@ -26,14 +26,16 @@ import java.awt.image.BufferedImage;
  */
 public class PictureExplorer implements MouseMotionListener, ActionListener, MouseListener {
 
+   /**
+    * The picture being explored
+    */
+   private final DigitalPicture picture;
    // current x and y index
    private int xIndex = 0;
    private int yIndex = 0;
-
    //Main gui variables
    private JFrame      pictureFrame;
    private JScrollPane scrollPane;
-
    //information bar variables
    private JLabel     xLabel;
    private JButton    xPrevButton;
@@ -48,7 +50,6 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
    private JLabel     bValue;
    private JLabel     colorLabel;
    private JPanel     colorPanel;
-
    // menu components
    private JMenuBar  menuBar;
    private JMenu     zoomMenu;
@@ -59,12 +60,6 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
    private JMenuItem hundredFifty;
    private JMenuItem twoHundred;
    private JMenuItem fiveHundred;
-
-   /**
-    * The picture being explored
-    */
-   private final DigitalPicture picture;
-
    /**
     * The image icon used to display the picture
     */
@@ -406,7 +401,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
       // create the pixel location panel
       JPanel locationPanel = createLocationPanel(largerFont);
 
-      // create the color informaiton panel
+      // create the color information panel
       JPanel colorInfoPanel = createColorInfoPanel(largerFont);
 
       // add the panels to the info panel

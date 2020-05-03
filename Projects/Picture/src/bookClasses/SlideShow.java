@@ -11,6 +11,15 @@ public class SlideShow {
       this.pictureArray = pictArray;
    }
 
+   public static void main(String[] args) throws Exception {
+      Picture[] pictArray = new Picture[]{new Picture(FileChooser.getMediaPath("beach.jpg")), new Picture(
+              FileChooser.getMediaPath("blueShrub.jpg")), new Picture(FileChooser.getMediaPath("church.jpg")), new Picture(
+              FileChooser.getMediaPath("eiffel.jpg")), new Picture(FileChooser.getMediaPath("greece.jpg"))};
+      SlideShow vacShow = new SlideShow(pictArray);
+      System.out.println(vacShow);
+      vacShow.show();
+   }
+
    public int getWaitTime() {
       return this.waitTime;
    }
@@ -41,7 +50,7 @@ public class SlideShow {
 
    public void show() throws Exception {
       if (this.pictureArray != null) {
-         Picture[] arr = this.pictureArray;
+         Picture[] arr    = this.pictureArray;
          int       length = arr.length;
 
          for (int i = 0; i < length; ++i) {
@@ -52,14 +61,5 @@ public class SlideShow {
          }
       }
 
-   }
-
-   public static void main(String[] args) throws Exception {
-      Picture[] pictArray = new Picture[]{new Picture(FileChooser.getMediaPath("beach.jpg")), new Picture(
-              FileChooser.getMediaPath("blueShrub.jpg")), new Picture(FileChooser.getMediaPath("church.jpg")), new Picture(
-              FileChooser.getMediaPath("eiffel.jpg")), new Picture(FileChooser.getMediaPath("greece.jpg"))};
-      SlideShow vacShow   = new SlideShow(pictArray);
-      System.out.println(vacShow);
-      vacShow.show();
    }
 }

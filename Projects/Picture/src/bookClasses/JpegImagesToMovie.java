@@ -74,9 +74,9 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 
    Object  waitSync          = new Object();
    boolean stateTransitionOK = true;
-   Object  waitFileSync = new Object();
-   boolean fileDone     = false;
-   boolean fileSuccess  = true;
+   Object  waitFileSync      = new Object();
+   boolean fileDone          = false;
+   boolean fileSuccess       = true;
    /**
     * number of frames per second
     */

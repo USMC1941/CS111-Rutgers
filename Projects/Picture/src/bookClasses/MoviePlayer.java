@@ -15,10 +15,10 @@ public class MoviePlayer {
 
    ///////////////// fields ///////////////////////////
 
-   private final JFrame frame      = new JFrame("Movie Player");
-   private final JLabel frameLabel = new JLabel("No images yet!");
+   private final JFrame         frame          = new JFrame("Movie Player");
+   private final JLabel         frameLabel     = new JLabel("No images yet!");
    private       AnimationPanel animationPanel = null;
-   private String         dir            = null;
+   private       String         dir            = null;
 
    //////////////////// constructors ////////////////////
 

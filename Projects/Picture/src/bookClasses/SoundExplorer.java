@@ -26,61 +26,72 @@ import java.util.Vector;
  * @author Barb Ericson ericson@cc.gatech.edu
  */
 public class SoundExplorer implements MouseMotionListener, ActionListener, MouseListener, LineListener {
-   private static final String  zoomInHint = "Click to see all the samples (the number of samples between pixels is 1)";
+   private static final String zoomInHint       = "Click to see all the samples (the number of samples between pixels is 1)";
    ///CONSTANTS///
    private static final String currentIndexText = "Current Index: ";
 
    ///////    main parts of the gui  /////////////////////////////
-   private static final String startIndexText   = "Start Index: ";
-   private static final String stopIndexText    = "Stop Index: ";
-   private static final Color  selectionColor   = Color.gray;
-   private static final Color  backgroundColor  = Color.black;
+   private static final String startIndexText  = "Start Index: ";
+   private static final String stopIndexText   = "Stop Index: ";
+   private static final Color  selectionColor  = Color.gray;
+   private static final Color  backgroundColor = Color.black;
 
    //////////   general information  ////////////////////////////
-   private static final Color  waveColor        = Color.white;
-   private static final Color  barColor         = Color.cyan;
-
+   private static final Color waveColor = Color.white;
+   private static final Color barColor  = Color.cyan;
+   private static final String      rightSampleText = "Right (Bottom) Sample Value: ";
    /////////////////// parts of the play panel ////////////////
    ///////////////////////// class fields ///////////////////////////
-   private static       String  leftSampleText  = "Sample Value: ";
-   private static final String  rightSampleText = "Right (Bottom) Sample Value: ";
+   private static       String      leftSampleText  = "Sample Value: ";
    /**
     * set to true for debugging and false for normal
     */
-   private final        boolean DEBUG           = false;
+   private final        boolean     DEBUG           = false;
+   /**
+    * the sound displayed in this window
+    */
+   private final        SimpleSound sound;
+   /**
+    * Whether to display the sound in stereo - NOT necessarily
+    * whether or not the sound is in stereo
+    */
+   private final        boolean     inStereo;
+   /**
+    * width of the displayed sound in pixels when fully zoomed out
+    */
+   private final int        zoomOutWidth;
+   /**
+    * width of the displayed sound in pixels when fully zoomed in (framesPerPixel = 1)
+    */
+   private final int        zoomInWidth;
+   /**
+    * current height of the sound in pixels
+    */
+   private final int        sampleHeight;
    /**
     * the main window
     */
-   private        JFrame  soundFrame;
+   private              JFrame      soundFrame;
    /**
     * panel that contains the buttons to play all or part of a sound and show
     * selection information
     */
-   private JPanel      playPanel;
-   /**
-    * scroll pane that holds the sound panel
-    */
-   private JScrollPane scrollSound;
-   /**
-    * The panel that shows the sound wave
-    */
-   private       JPanel      soundPanel;
-   /**
-    * the sound displayed in this window
-    */
-   private final SimpleSound sound;
-   /**
-    * Whether to display the sound in stereo - NOT neccessarily
-    * whether or not the sound is in stereo
-    */
-   private final boolean     inStereo;
-   /**
-    * label that shows the start index for the selection
-    */
-   private       JLabel      startIndexLabel;
+   private              JPanel      playPanel;
 
 
    //////////////// parts of the sound panel /////////////
+   /**
+    * scroll pane that holds the sound panel
+    */
+   private              JScrollPane scrollSound;
+   /**
+    * The panel that shows the sound wave
+    */
+   private              JPanel      soundPanel;
+   /**
+    * label that shows the start index for the selection
+    */
+   private              JLabel      startIndexLabel;
    /**
     * label that shows the stop index for the selection
     */
@@ -93,6 +104,8 @@ public class SoundExplorer implements MouseMotionListener, ActionListener, Mouse
     * button to play the entire sound
     */
    private JButton playEntireButton;
+
+   ////////////////  parts of the information panel //////////////
    /**
     * button to play the current selection
     */
@@ -105,18 +118,16 @@ public class SoundExplorer implements MouseMotionListener, ActionListener, Mouse
     * button to play the sound after the current index (inclusive)
     */
    private JButton playAfterButton;
-
-   ////////////////  parts of the information panel //////////////
    /**
     * button to clear the selection
     */
-   private JButton clearSelectionButton;
+   private JButton       clearSelectionButton;
    /**
     * button to stop playing the sound
     */
-   private JButton stopButton;
+   private JButton       stopButton;
    //info related to the play panel
-   private boolean selectionPrevState;
+   private boolean       selectionPrevState;
    /**
     * outer panel for left sound
     */
@@ -144,102 +155,90 @@ public class SoundExplorer implements MouseMotionListener, ActionListener, Mouse
    /**
     * the current index information panel
     */
-   private JPanel     infoPanel;
+   private JPanel        infoPanel;
    /**
     * the current index label
     */
-   private JLabel     indexLabel;
-   /**
-    * the number of samples per pixel field
-    */
-   private JTextField numSamplesPerPixelField;
-   /**
-    * text field to display the current index value
-    */
-   private JTextField indexValue;
-   /**
-    * label for the left sample value
-    */
-   private JLabel     leftSampleLabel;
+   private JLabel        indexLabel;
 
    //info related to the sound panel
    /**
+    * the number of samples per pixel field
+    */
+   private JTextField    numSamplesPerPixelField;
+   /**
+    * text field to display the current index value
+    */
+   private JTextField    indexValue;
+   /**
+    * label for the left sample value
+    */
+   private JLabel        leftSampleLabel;
+   /**
     * text field that shows the value for the left sample at the current index
     */
-   private JTextField leftSampleValue;
+   private       JTextField leftSampleValue;
    /**
     * label for the right sample value
     */
-   private JLabel     rightSampleLabel;
+   private       JLabel     rightSampleLabel;
    /**
     * text field that shows the value for the right sample at the current index
     */
-   private JTextField rightSampleValue;
+   private       JTextField rightSampleValue;
+   //private int cushion;
    /**
     * panel that holds the zoom button
     */
-   private JPanel     zoomButtonPanel;
+   private       JPanel     zoomButtonPanel;
    /**
     * zoom in and out button
     */
-   private JButton    zoomButton;
+   private       JButton    zoomButton;
    /**
     * button to go to the previous index
     */
-   private JButton    prevButton;
-   //private int cushion;
+   private       JButton    prevButton;
    /**
     * button to go to the next index
     */
-   private JButton    nextButton;
+   private       JButton    nextButton;
    /**
     * button to go to the last index
     */
-   private JButton    lastButton;
+   private       JButton    lastButton;
    /**
     * button to go to the first index
     */
-   private       JButton firstButton;
-   /**
-    * width of the displayed sound in pixels when fully zoomed out
-    */
-   private final int     zoomOutWidth;
-   /**
-    * width of the displayed sound in pixels when fully zoomed in (framesPerPixel = 1)
-    */
-   private final int     zoomInWidth;
+   private       JButton    firstButton;
    /**
     * current width of the sound in pixels
     */
-   private       int sampleWidth;
-   /**
-    * current height of the sound in pixels
-    */
-   private final int sampleHeight;
+   private       int        sampleWidth;
    //private int labelHeight;
-   private       int soundPanelHeight;
+   private       int        soundPanelHeight;
    /**
     * number of samples (frames) (amount to add to index to get to next pixel)
     */
-   private float framesPerPixel;
+   private       float      framesPerPixel;
    /**
     * current position in pixels
     */
-   private int   currentPixelPosition;
+   private       int        currentPixelPosition;
    /**
     * start at 0 or 1 base
     */
-   private int   base = 0;
+   private       int        base = 0;
    //info related to event handling
-   private int     mousePressed;
-   private int     mouseReleased;
-   private int     mousePressedX;
-   private int     mouseReleasedX;
-   private boolean mouseDragged;
-   private int     startFrame;
-   private int     stopFrame;
-   private int     selectionStart;
-   private int     selectionStop;
+   private       int        mousePressed;
+   private       int        mouseReleased;
+   private       int        mousePressedX;
+   private       int        mouseReleasedX;
+   private       boolean    mouseDragged;
+   private       int        startFrame;
+   private       int        stopFrame;
+   private       int        selectionStart;
+   private       int        selectionStop;
 
    /**
     * Constructor that takes a sound and a boolean flag
@@ -457,7 +456,7 @@ public class SoundExplorer implements MouseMotionListener, ActionListener, Mouse
     
     /*
      do all the stuff to display the left channel.  we'll only
-     make the stuff to display the right channel if neccessary.
+     make the stuff to display the right channel if necessary.
      everything will go into the leftSoundPanel, which is then
      added to the main soundPanel
      */
@@ -890,7 +889,7 @@ public class SoundExplorer implements MouseMotionListener, ActionListener, Mouse
     * @param e the action event
     */
    public void actionPerformed(ActionEvent e) {
-      if (e.getActionCommand() == "Play Entire Sound") {
+      if (e.getActionCommand().equals("Play Entire Sound")) {
          try {
             sound.play();
          }
@@ -898,7 +897,7 @@ public class SoundExplorer implements MouseMotionListener, ActionListener, Mouse
             catchException(ex);
          }
       }
-      else if (e.getActionCommand() == "Play Selection") {
+      else if (e.getActionCommand().equals("Play Selection")) {
          try {
             sound.playAtRateInRange(1, startFrame, stopFrame);
          }

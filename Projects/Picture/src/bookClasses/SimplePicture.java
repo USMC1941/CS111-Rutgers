@@ -163,7 +163,7 @@ public class SimplePicture implements DigitalPicture {
    /**
     * Method to get the extension for this picture
     *
-    * @return the extendsion (jpg or bmp)
+    * @return the extension (jpg or bmp)
     */
    public String getExtension() {
       return extension;
@@ -560,7 +560,7 @@ public class SimplePicture implements DigitalPicture {
     * @return the resulting picture
     */
    public Picture scale(double xFactor, double yFactor) {
-      // set up the scale tranform
+      // set up the scale transform
       AffineTransform scaleTransform = new AffineTransform();
       scaleTransform.scale(xFactor, yFactor);
 
@@ -587,7 +587,7 @@ public class SimplePicture implements DigitalPicture {
     */
    public Picture getPictureWithWidth(int width) {
       // set up the scale transform
-      double  xFactor = (double) width / this.getWidth();
+      double xFactor = (double) width / this.getWidth();
       return scale(xFactor, xFactor);
    }
 
@@ -601,7 +601,7 @@ public class SimplePicture implements DigitalPicture {
     */
    public Picture getPictureWithHeight(int height) {
       // set up the scale transform
-      double  yFactor = (double) height / this.getHeight();
+      double yFactor = (double) height / this.getHeight();
       return scale(yFactor, yFactor);
    }
 

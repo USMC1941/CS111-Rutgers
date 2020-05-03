@@ -22,16 +22,16 @@ public class ShapeComponent extends JComponent implements RegionInterface {
 
    ///////////////// Private Attributes /////////////////////////////
 
-   private final java.util.List<AbstractShape> shapes       = new ArrayList<AbstractShape>(); // a vector of shapes
-   private       AbstractShape                 currentShape = null; // current shape being dragged
-   private String                        currShapeType   = AbstractShape.RECTANGLE; // default shape type
-   private int                           width           = 800;
-   private       int           height          = 600;
-   private final Color         backgroundColor = Color.WHITE;
-   private       BufferedImage backgroundImage = null;
+   private final java.util.List<AbstractShape> shapes          = new ArrayList<AbstractShape>(); // a vector of shapes
+   private final Color                         backgroundColor = Color.WHITE;
    //private Image backgroundBuffer = null;        // background image for double buffering
-   private final Graphics      backgroundG     = null;    // graphics context of background image
-   private       VideoCapturer videoHandler    = null;
+   private final Graphics                      backgroundG     = null;    // graphics context of background image
+   private       AbstractShape                 currentShape    = null; // current shape being dragged
+   private       String                        currShapeType   = AbstractShape.RECTANGLE; // default shape type
+   private       int                           width           = 800;
+   private       int                           height          = 600;
+   private       BufferedImage                 backgroundImage = null;
+   private       VideoCapturer                 videoHandler    = null;
 
    /////////////////// Constructors //////////////////////////////////
 

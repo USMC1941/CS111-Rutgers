@@ -3,7 +3,6 @@ package bookClasses;
 import java.awt.*;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -19,24 +18,21 @@ public class Pen {
    ////////////////// fields //////////////////////
 
    /**
+    * list of path segment objects to draw
+    */
+   private final List<PathSegment> pathSegmentList = new ArrayList<PathSegment>();
+   /**
     * track if up or down
     */
    private boolean penDown = true;
-
    /**
     * color of ink
     */
    private Color color = Color.green;
-
    /**
     * width of stroke
     */
    private int width = 1;
-
-   /**
-    * list of path segment objects to draw
-    */
-   private final List<PathSegment> pathSegmentList = new ArrayList<PathSegment>();
 
    //////////////// constructors ///////////////////
 
@@ -159,7 +155,7 @@ public class Pen {
 
       Color oldcolor = g.getColor();
 
-      PathSegment pathSeg  = null;
+      PathSegment pathSeg = null;
 
       // loop through path segment list and
       // loop through path segments

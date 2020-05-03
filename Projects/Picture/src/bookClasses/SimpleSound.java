@@ -277,8 +277,8 @@ public class SimpleSound {
    /**
     * Method to convert a mp3 sound into a wav sound
     *
-    * @param mp3File
-    * @param wavFile
+    * @param mp3File mp3 sound
+    * @param wavFile wav sound
     */
    public static void convert(String mp3File, String wavFile) {
       try {
@@ -545,7 +545,7 @@ public class SimpleSound {
       }//try
       catch (FileNotFoundException e) {
          printError("The file you specified did not already exist " + "so we tried to create a new one, but were unable" +
-                    "to do so.  Please try again.  If problems " + "persit see your TA.", e);
+                    "to do so.  Please try again.  If problems " + "persist see your TA.", e);
       }
       catch (Exception e) {
          printError("Problems writing to file: " + outFileName, e);
@@ -565,7 +565,7 @@ public class SimpleSound {
    /**
     * Resets the fields of this sound so that it now represents the
     * sound in the specified file.  If successful, the fileName
-    * ariable is updated such that it is equivalent to
+    * variable is updated such that it is equivalent to
     * <code>inFileName</code>.
     *
     * @param inFileName the path and filename of the sound we want to
@@ -672,11 +672,11 @@ public class SimpleSound {
 
    /**
     * Creates a new Playback thread and starts it.   The thread is
-    * guarranteed to finish playing the sound as long as the program
+    * guaranteed to finish playing the sound as long as the program
     * doesn't exit before it is done.  This method does not block,
     * however.  So, if you invoke <code>play()</code> multiple times
     * in a row, sounds will simply play on
-    * top of eachother - "accidental mixing"
+    * top of each other - "accidental mixing"
     *
     * @see Playback
     */
@@ -690,7 +690,7 @@ public class SimpleSound {
    /**
     * Creates a new Playback thread, starts it, then waits for the
     * entire sound to finish playing before it returns.  This method
-    * is guarranteed to play the entire sound, and does not allow for
+    * is guaranteed to play the entire sound, and does not allow for
     * any "accidental mixing"
     *
     * @see Playback
@@ -723,7 +723,7 @@ public class SimpleSound {
 
    /**
     * Checks the value of durInFrames to make sure that it is not
-    * larger than Integer.MAX_VALUE to guarrantee safe casting.
+    * larger than Integer.MAX_VALUE to guarantee safe casting.
     * Also checks the value of rate to make sure that it is not
     * larger than Float.MAX_VALUE before casting.
     *
@@ -751,9 +751,9 @@ public class SimpleSound {
 
    /**
     * First, checks the value of durInFrames to make sure that it is
-    * not larger than Integer.MAX_VALUE to guarrantee safe casting.
-    * Simmilarly, checks the value of rate to make sure that it is
-    * not larger than FLoat.MAX_VALUE before casting.
+    * not larger than Integer.MAX_VALUE to guarantee safe casting.
+    * Similarly, checks the value of rate to make sure that it is
+    * not larger than Float.MAX_VALUE before casting.
     *
     * @param rate        a double representing the change in sampleRate
     *                    (==frameRate) for playing back this sound
@@ -857,7 +857,7 @@ public class SimpleSound {
                  " samples total.");
       }
       if (startFrame < 0) {
-         printError("You cannot start playing at index " + (startFrame + 1) + ".  Choose 1 to start at the begining.");
+         printError("You cannot start playing at index " + (startFrame + 1) + ".  Choose 1 to start at the beginning.");
       }
       if (endFrame < startFrame) {
          printError("You cannot start playing at index " + (startFrame + 1) + " and stop playing at index " + (endFrame + 1) +
@@ -1222,7 +1222,7 @@ public class SimpleSound {
 
    /**
     * Obtains the length of this sound in bytes.  Note, that this number is not
-    * neccessarily the same as the length of this sound's file in bytes.
+    * necessarily the same as the length of this sound's file in bytes.
     *
     * @return the sound length in bytes
     */

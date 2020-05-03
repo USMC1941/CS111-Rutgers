@@ -22,15 +22,15 @@ public class FileChooser {
    /**
     * Property key for the media directory
     */
-   private static final String MEDIA_DIRECTORY = "mediaDirectory";
+   private static final String     MEDIA_DIRECTORY    = "mediaDirectory";
    /**
     * Name for property file
     */
-   private static final String PROPERTY_FILE_NAME = "SimplePictureProperties.txt";
+   private static final String     PROPERTY_FILE_NAME = "SimplePictureProperties.txt";
    /**
     * Properties to use during execution
     */
-   private static Properties appProperties = null;
+   private static       Properties appProperties      = null;
 
    /////////////////////// methods /////////////////////////////
 

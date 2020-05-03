@@ -10,7 +10,7 @@ package bookClasses;
  */
 public class Sound extends SimpleSound {
 
-   /////////////// consructors ////////////////////////////////////
+   /////////////// constructors ////////////////////////////////////
 
    /**
     * Constructor that takes a file name

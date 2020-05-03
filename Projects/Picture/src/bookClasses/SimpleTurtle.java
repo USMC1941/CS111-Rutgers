@@ -23,15 +23,13 @@ public class SimpleTurtle {
    ///////////////// fields ////////////////////////
 
    /**
-    * count of the number of turtles created
-    */
-   private static int numTurtles = 0;
-
-   /**
     * array of colors to use for the turtles
     */
    private static final Color[] colorArray = {Color.green, Color.cyan, new Color(204, 0, 204), Color.gray};
-
+   /**
+    * count of the number of turtles created
+    */
+   private static int numTurtles = 0;
    /**
     * who to notify about changes to this turtle
     */
@@ -566,7 +564,7 @@ public class SimpleTurtle {
          this.updateDisplay();
       }
 
-      // set the visibile flag to the passed value
+      // set the visible flag to the passed value
       this.visible = value;
    }
 
@@ -622,7 +620,7 @@ public class SimpleTurtle {
    }
 
    /**
-    * Method to move the turtle foward 100 pixels
+    * Method to move the turtle forward 100 pixels
     */
    public void forward() {
       forward(100);
@@ -722,7 +720,7 @@ public class SimpleTurtle {
       // if g2 isn't null
       if (g2 != null) {
 
-         // save the current tranform
+         // save the current transform
          AffineTransform oldTransform = g2.getTransform();
 
          // rotate to turtle heading and translate to xPos and yPos
@@ -731,7 +729,7 @@ public class SimpleTurtle {
          // draw the passed picture
          g2.drawImage(dropPicture.getImage(), xPos, yPos, null);
 
-         // reset the tranformation matrix
+         // reset the transformation matrix
          g2.setTransform(oldTransform);
 
          //  draw the pen
@@ -750,7 +748,7 @@ public class SimpleTurtle {
 
       // if the turtle is visible
       if (visible) {
-         // save the current tranform
+         // save the current transform
          AffineTransform oldTransform = g2.getTransform();
 
          // rotate the turtle and translate to xPos and yPos
@@ -781,7 +779,7 @@ public class SimpleTurtle {
             drawInfoString(g2);
          }
 
-         // reset the tranformation matrix
+         // reset the transformation matrix
          g2.setTransform(oldTransform);
       }
 
@@ -800,7 +798,7 @@ public class SimpleTurtle {
    }
 
    /**
-    * Method to return a string with informaiton
+    * Method to return a string with information
     * about this turtle
     *
     * @return a string with information about this object

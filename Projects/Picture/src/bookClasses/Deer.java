@@ -47,7 +47,7 @@ public class Deer extends Turtle {
 
    /**
     * Constructor that takes the model display (the original
-    * position will be randomally assigned
+    * position will be randomly assigned
     *
     * @param modelDisplayer thing which will display the model
     */

@@ -12,11 +12,11 @@ import java.awt.*;
  */
 public class ImageDisplay extends JPanel implements Scrollable {
 
+   private final Dimension prefSize;  // the preferred size of the display
    /////////////////////////// fields (attributes ///////////////////////////
    private       Image     image;         // the image to draw
-   private final Dimension prefSize;  // the preferred size of the display
    private       int       currentX = 0;    // the current x index
-   private int       currentY = 0;    // the current y index
+   private       int       currentY = 0;    // the current y index
 
    //////////////////////////// constructors /////////////////////////////////
 

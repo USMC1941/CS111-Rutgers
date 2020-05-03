@@ -71,7 +71,7 @@ public class MidiPlayer {
          channel = channels[0];
       }
       catch (Exception e) {
-         System.out.println(e);
+         e.printStackTrace();
       }
    }
 

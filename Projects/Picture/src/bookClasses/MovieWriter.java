@@ -105,7 +105,7 @@ public class MovieWriter {
    /**
     * Constructor that takes the directory with the frames
     * the frame rate, and the output url (dir,name,
-    * and extendsion)
+    * and extension)
     *
     * @param theFramesDir the directory that holds the frame
     * @param theFrameRate the number of frames per second

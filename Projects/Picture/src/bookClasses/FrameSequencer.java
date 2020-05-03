@@ -19,39 +19,33 @@ public class FrameSequencer {
    //////////////////// Fields ///////////////////////////////////
 
    /**
-    * stores the directory to write the frames to
-    */
-   private String directory;
-
-   /**
-    * stores the base file name for each frame file
-    */
-   private String baseName = "frame";
-
-   /**
-    * stores the current frame number
-    */
-   private int frameNumber = 1;
-
-   /**
-    * true if this sequence is being shown
-    */
-   private boolean shown = false;
-
-   /**
-    * the movie player used to show this sequence
-    */
-   private MoviePlayer moviePlayer = null;
-
-   /**
     * List of all the pictures so far
     */
    private final List<Picture> pictureList = new ArrayList<Picture>();
-
    /**
     * Use this to format the number for the frame
     */
    private final NumberFormat numberFormat = NumberFormat.getIntegerInstance();
+   /**
+    * stores the directory to write the frames to
+    */
+   private String directory;
+   /**
+    * stores the base file name for each frame file
+    */
+   private String baseName = "frame";
+   /**
+    * stores the current frame number
+    */
+   private int frameNumber = 1;
+   /**
+    * true if this sequence is being shown
+    */
+   private boolean shown = false;
+   /**
+    * the movie player used to show this sequence
+    */
+   private MoviePlayer moviePlayer = null;
 
    //////////////////// Constructors /////////////////////////////
 

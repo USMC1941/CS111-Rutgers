@@ -207,7 +207,7 @@ public abstract class TextBalloon {
    /**
     * Method to get the height of the balloon
     *
-    * @param g2           the grahics 2d context to draw in
+    * @param g2           the graphics 2d context to draw in
     * @param attrCharIter the attributed character iterator
     *                     that is used to display the text
     * @return the height in pixels

@@ -12,8 +12,8 @@ import java.awt.geom.Line2D;
  */
 public class PathSegment {
    //////////////// fields /////////////////////
-   private final Color color;
-   private final int   width;
+   private final Color        color;
+   private final int          width;
    private final Line2D.Float line;
 
    //////////////// constructors ///////////////

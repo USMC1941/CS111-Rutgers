@@ -14,10 +14,10 @@ import java.awt.*;
  */
 public class ComicStrip extends JPanel {
    ////////////////// fields ///////////////////////
-   private final String author;
-   private final String name;
+   private final String       author;
+   private final String       name;
    private       ComicPanel[] panelArray = null;
-   private int          width;
+   private       int          width;
 
    /////////////// constructors //////////////////////
 

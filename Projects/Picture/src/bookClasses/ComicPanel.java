@@ -19,27 +19,24 @@ public class ComicPanel extends JPanel {
    ////////////// fields //////////////////
 
    /**
-    * the picture for the comic panel
-    */
-   private Picture picture = null;
-
-   /**
     * the list of text balloons
     */
    private final List<TextBalloon> textBalloonList = new ArrayList<TextBalloon>();
-   // comment above and uncomment below for 1.4
-   //private List textBalloonList =
-   //  new ArrayList();
-
    /**
     * the label used to display the picture
     */
    private final JLabel pictureLabel = new JLabel();
-
+   // comment above and uncomment below for 1.4
+   //private List textBalloonList =
+   //  new ArrayList();
    /**
     * flag if line border for this panel
     */
    private final boolean lineBorder = true;
+   /**
+    * the picture for the comic panel
+    */
+   private Picture picture = null;
 
    //////////////// constructors ////////////
 

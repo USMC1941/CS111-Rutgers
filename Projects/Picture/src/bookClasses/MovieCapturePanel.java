@@ -18,13 +18,13 @@ public class MovieCapturePanel extends JPanel {
     */
    private final ShapeComponent     shapeComponent = new ShapeComponent(500, 500);
    /**
-    * panel with buttons to control capture
-    */
-   private       CaptureButtonPanel buttonPanel    = null;
-   /**
     * class that holds information on the capture
     */
    private final MovieCapturer      movieCapturer  = null;
+   /**
+    * panel with buttons to control capture
+    */
+   private       CaptureButtonPanel buttonPanel    = null;
 
    ////////////////////// Constructors /////////////////////////////
 

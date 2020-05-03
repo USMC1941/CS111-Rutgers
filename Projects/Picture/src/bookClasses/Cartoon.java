@@ -38,7 +38,7 @@ public class Cartoon {
    }
 
    /**
-    * Method to add a word balloon that contians the message
+    * Method to add a word balloon that contains the message
     *
     * @param message the text to show
     * @param xPos    the top left for the word balloon
@@ -57,7 +57,7 @@ public class Cartoon {
       float             lineHeight = metrics.getHeight();
       float             ascent     = metrics.getAscent();
 
-      // draw the ellipse for the word ballon
+      // draw the ellipse for the word balloon
       double ellipseWidth  = bounds.getWidth() * 1.5;
       double ellipseHeight = bounds.getHeight() * 2.0;
       g2.setColor(Color.WHITE);

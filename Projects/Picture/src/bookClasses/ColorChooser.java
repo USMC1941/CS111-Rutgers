@@ -6,7 +6,7 @@ import java.awt.*;
 /**
  * A class to make working with a color chooser easier
  * for students.  It uses a JColorChooser to let the user
- * pick a color and returns the choosen color object.
+ * pick a color and returns the chosen color object.
  * <p>
  * Copyright Georgia Institute of Technology 2004
  *

@@ -13,21 +13,21 @@ import java.awt.event.ActionListener;
  */
 public class ButtonPanel extends JPanel {
    //////////////// fields ////////////////////////
+   private final JButton     nextButton           = new JButton("Next");
+   private final JButton     playButton           = new JButton("Play Movie");
+   private final JButton     prevButton           = new JButton("Prev");
+   private final JButton     delBeforeButton      = new JButton("Delete All Previous");
+   private final JButton     delAfterButton       = new JButton("Delete All After");
+   private final JButton     writeQuicktimeButton = new JButton("Write Quicktime");
+   private final JButton     writeAVIButton       = new JButton("Write AVI");
    /**
     * list for the frame rate
     */
-   private JList       frameRateList        = null;
+   private       JList       frameRateList        = null;
    /**
     * label for frame rate
     */
-   private       JLabel  frameRateLabel = null;
-   private final JButton nextButton     = new JButton("Next");
-   private final JButton playButton     = new JButton("Play Movie");
-   private final JButton prevButton = new JButton("Prev");
-   private final JButton delBeforeButton = new JButton("Delete All Previous");
-   private final JButton delAfterButton  = new JButton("Delete All After");
-   private final JButton writeQuicktimeButton = new JButton("Write Quicktime");
-   private final JButton writeAVIButton       = new JButton("Write AVI");
+   private       JLabel      frameRateLabel       = null;
    private       MoviePlayer moviePlayer          = null;
 
    ///////////////// Constructors /////////////////

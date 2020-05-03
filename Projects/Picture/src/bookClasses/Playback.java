@@ -28,21 +28,18 @@ public class Playback extends Thread {
     * @see Playback#run()
     */
    private static final int BUFFER_SIZE = 16384;
-
-   /**
-    * The source data line for the sound
-    */
-   private SourceDataLine line;
-
-   /**
-    * flag that says is the sound currently being played
-    */
-   private boolean playing = false;
-
    /**
     * The sound being played
     */
    private final SimpleSound sound;
+   /**
+    * The source data line for the sound
+    */
+   private SourceDataLine line;
+   /**
+    * flag that says is the sound currently being played
+    */
+   private boolean playing = false;
 
    ////////////////// Constructors //////////////////////////////////////
 
@@ -105,7 +102,7 @@ public class Playback extends Thread {
          return;
       }
 
-      //reset stream to the begining
+      //reset stream to the beginning
       try {
          audioInputStream.reset();
       }
