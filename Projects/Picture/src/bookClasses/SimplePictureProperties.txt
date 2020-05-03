@@ -1,0 +1,3 @@
+#Properties for the Simple Picture class
+#Tue Mar 17 11:29:55 EDT 2009
+mediaDirectory=C\:\\intro-prog-java\\mediasources/

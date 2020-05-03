@@ -1,0 +1,1 @@
+java -Xmx1024m -Xms128m -classpath ./;./sound.jar;./jmf.jar MovieCapturePanel
