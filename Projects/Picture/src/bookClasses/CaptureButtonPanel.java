@@ -245,32 +245,31 @@ public class CaptureButtonPanel extends JPanel {
          }
       });
 
-      // create the take picture button
-      //    pictureButton = new JButton("Take Picture");
-      //    pictureButton.setToolTipText("Click here to take a picture");
-      //    pictureButton.setEnabled(false);
-      //    buttonPanel.add(pictureButton);
-      //    pictureButton.addActionListener(new ActionListener() {
-      //      public void actionPerformed (ActionEvent e) {
-      //        BufferedImage image = null;
-      //        if (videoHandler != null)
-      //        {
-      //          java.awt.Rectangle region = videoHandler.getRegion();
-      //          if (region != null)
-      //          {
-      //            FrameSequencer frameSequencer = videoHandler.getFrameSequencer();
-      //            try {
-      //              image = new Robot().createScreenCapture(region);
-      //            } catch (Exception ex) {
-      //              ex.printStackTrace();
-      //              System.out.println("caught exception while taking a picture");
+      // Create the take picture button
+      //      pictureButton = new JButton("Take Picture");
+      //      pictureButton.setToolTipText("Click here to take a picture");
+      //      pictureButton.setEnabled(false);
+      //      buttonPanel.add(pictureButton);
+      //      pictureButton.addActionListener(new ActionListener() {
+      //         public void actionPerformed(ActionEvent e) {
+      //            BufferedImage image = null;
+      //            if (videoHandler != null) {
+      //               java.awt.Rectangle region = videoHandler.getRegion();
+      //               if (region != null) {
+      //                  FrameSequencer frameSequencer = videoHandler.getFrameSequencer();
+      //                  try {
+      //                     image = new Robot().createScreenCapture(region);
+      //                  }
+      //                  catch (Exception ex) {
+      //                     ex.printStackTrace();
+      //                     System.out.println("caught exception while taking a picture");
+      //                  }
+      //                  Picture p = new Picture(image);
+      //                  frameSequencer.addFrame(p);
+      //               }
       //            }
-      //            Picture p = new Picture(image);
-      //            frameSequencer.addFrame(p);
-      //          }
-      //        }
-      //      }
-      //    });
+      //         }
+      //      });
 
       // create the play movie button
       playButton = new JButton("Play Movie");

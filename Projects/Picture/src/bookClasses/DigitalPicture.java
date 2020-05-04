@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
  * Interface to describe a digital picture.  A digital picture can have a
  * associated file name.  It can have a title.  It has pixels
  * associated with it and you can get and set the pixels.  You
- * can get an Image from a picture or a BufferedImage.  You can load
+ * can get an Image from a picture or a {@link BufferedImage}.  You can load
  * it from a file name or image.  You can show a picture.  You can
  * create a new image for it.
  * <p>

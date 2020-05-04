@@ -67,7 +67,7 @@ import java.util.List;
  *
  * @author Sun - orig
  * @author Barb Ericson ericson@cc.gatech.edu
- * modified to use List<String> instead of Vector
+ * modified to use {@code List<String>} instead of Vector
  * and added methods for Quicktime and AVI
  */
 public class JpegImagesToMovie implements ControllerListener, DataSinkListener {

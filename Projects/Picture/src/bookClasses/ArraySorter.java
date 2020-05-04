@@ -273,11 +273,10 @@ public class ArraySorter {
    public int partition(int left, int right) {
       System.out.println("left: " + left + " right: " + right);
       // start with pivot at from index
-      int pivotIndex = left;
-      int pivotValue = a[pivotIndex];
+      int pivotValue = a[left];
 
       // put the pivot at the end on right
-      swap(pivotIndex, right);
+      swap(left, right);
 
       int storedIndex = left;
       for (int i = left; i <= right - 1; i++) {
