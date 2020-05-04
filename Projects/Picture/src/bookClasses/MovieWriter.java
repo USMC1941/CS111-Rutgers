@@ -1,6 +1,6 @@
 package bookClasses;
 
-import ch.randelshofer.media.avi.AVIOutputStream;
+import org.monte.media.avi.AVIOutputStreamOLD;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -235,7 +235,7 @@ public class MovieWriter {
          String filename = (new URL(outputURL)).getFile();
 
          //Setup the output stream
-         AVIOutputStream AVIout = new AVIOutputStream(new File(filename), AVIOutputStream.VideoFormat.JPG);
+         AVIOutputStreamOLD AVIout = new AVIOutputStreamOLD(new File(filename), AVIOutputStreamOLD.AVIVideoFormat.JPG);
          AVIout.setVideoCompressionQuality(1);
          AVIout.setFrameRate(frameRate);
          AVIout.setVideoDimension(p.getWidth(), p.getHeight());

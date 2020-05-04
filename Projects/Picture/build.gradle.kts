@@ -10,9 +10,11 @@ repositories {
 dependencies {
    implementation("javazoom:jlayer:1.0.1")
    implementation("javax.media:jmf:2.1.1e")
+   implementation("com.pojosontheweb:monte-repack:1.0.1")
 
    // https://stackoverflow.com/a/56557241
-   implementation(files("src/jar/AVIDemo.jar"))
+   // http://www.randelshofer.ch/monte/: If using this, you need "AVIDemo.jar" from here.
+   // implementation(files("src/jar/AVIDemo.jar"))
 }
 
 sourceSets {
