@@ -6,5 +6,5 @@ This is the CS11 Spring 2019 project Picture. This uses [Gradle](https://gradle.
 
 ## Objective
 Complete these classes:
-- [Milestone2.java](src/bookClasses/Milestone2.java)
-- [MyPicture.java](src/bookClasses/MyPicture.java)
+- [Milestone2.java](src/Milestone2.java)
+- [MyPicture.java](src/MyPicture.java)

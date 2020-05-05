@@ -1,4 +1,4 @@
-package bookClasses;
+import bookClasses.Picture;
 
 /**
  * Submit this file for Project Part 1

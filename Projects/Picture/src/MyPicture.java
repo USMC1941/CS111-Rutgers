@@ -1,4 +1,4 @@
-package bookClasses;
+import bookClasses.Picture;
 
 public class MyPicture {
 
@@ -20,7 +20,7 @@ public class MyPicture {
    }
 
    /**
-    * Returns the string representation for a {@link bookClasses.MyPicture} object.
+    * Returns the string representation for a {@link MyPicture} object.
     * The string's format should match the following EXACTLY:
     * <pre>
     *    {@code <imagename>.<extension> <width> x <length> <description>}
@@ -33,8 +33,8 @@ public class MyPicture {
    }
 
    /**
-    * Returns true of the parameter {@link bookClasses.MyPicture} object is equal
-    * to the current instance, false otherwise. {@link bookClasses.MyPicture} objects
+    * Returns true of the parameter {@link MyPicture} object is equal
+    * to the current instance, false otherwise. {@link MyPicture} objects
     * are considered equal if and only if their filenames are the
     * same AND their descriptions are the same.
     */
@@ -45,7 +45,7 @@ public class MyPicture {
 
    /**
     * Returns a new Picture object representing the 'negative'
-    * image of this {@link bookClasses.MyPicture} object. The negative of a pixel
+    * image of this {@link MyPicture} object. The negative of a pixel
     * is defined by taking each pixel's red, blue, and green value and
     * subtracting that value from 255.
     */
