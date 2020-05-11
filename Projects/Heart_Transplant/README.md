@@ -106,7 +106,7 @@ public Person[] match(int numberOfHearts) {
 ```
 > Assume there are `numberOfHearts` available for transplantation surgery. Also assume that the hearts are of the same blood type as the persons on the `listOfPatients`. This method finds a set of persons to be the recepients of these hearts. The method returns a Person array from the `listOfPatients` array that have the highest potential for survivability after the transplant. The array size is `numberOfHearts`. If `numberOfHeartsAvailable` is greater than `listOfPatients` array size all Persons will receive a transplant. If `numberOfHeartsAvailable` is smaller than `listOfPatients` array size find the set of people with the highest potential for survivability. There is no correct solution, you may come up with any set of persons from the `listOfPatients` array.
 
-> For you to compare how effective your matching function is we will provide, 5 days before the due date, the data file with the condition of each patient after 3 years of the transplant. [Data file](HeartTransplant/src/data-post-transplant.txt) where the last column has the condition of each patient 3 years post transplant (`Person.java` with condition code).
+> For you to compare how effective your matching function is we will provide, 5 days before the due date, the data file with the condition of each patient after 3 years of the transplant. [Data file](HeartTransplant/data-post-transplant.txt) where the last column has the condition of each patient 3 years post transplant (`Person.java` with condition code).
 
 ## Data File Format
 The data file is divided in three sections.
