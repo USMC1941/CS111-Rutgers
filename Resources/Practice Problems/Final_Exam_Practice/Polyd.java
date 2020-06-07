@@ -1,4 +1,4 @@
-public class polyd {
+public class Polyd {
 	public static void main(String[] args) {
 		Polygon poly = new Polygon(4);
 
@@ -18,4 +18,3 @@ public class polyd {
 		System.out.println(poly.getArea()); // should print about 12.0
 	}
 }
-

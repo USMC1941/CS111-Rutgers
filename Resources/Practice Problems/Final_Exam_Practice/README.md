@@ -449,4 +449,4 @@ Define appropriate fields, and complete the following methods of `Polygon`:
 
 **You may assume that the user is responsible for selecting points that form a geometrically valid, simple polygon**. In particular, you can assume that the vertices will be in counterclockwise order, which is necessary to compute the perimeter and area without excessive difficulty.
 
-You should write your own test driver to test your class. The following program will get you started: [`polyd.java`](polyd.java).
+You should write your own test driver to test your class. The following program will get you started: [`Polyd.java`](Polyd.java).
