@@ -4,10 +4,9 @@
 
 Please read this document in its entirety, before you start work. Understand what you need to hand in, and ask questions early and often.
 
-In this project you will be using the knowledge you gained from lectures and homeworks and applying them to a lengthier programming assignment. The answers to some of your questions do not strictly reside in this document. You are encouraged to look at other sources for inspiration. 
+In this project you will be using the knowledge you gained from lectures and homeworks and applying them to a lengthier programming assignment. The answers to some of your questions do not strictly reside in this document. You are encouraged to look at other sources for inspiration.
 
 This semester’s project will involve the casino game of blackjack. This is an individual project, and as such you will be held to the University’s academic integrity policies. You are welcome to discuss strategies and ideas with other students (and will be encouraged to in recitation), but you must code the project on your own.
-
 
 ### Rules of Blackjack
 
@@ -24,10 +23,10 @@ Each round of simplified blackjack proceeds as follows:
 1. The dealer shuffles the deck and deals two cards "face up" (with the front of the card showing) to each player.
 2. The dealer deals one card "face down" (with only the back showing) and one card "face up" to himself.
 3. The dealer asks the first player whether she wishes to "hit" (receive another card) or "stand" (not receive any more cards).
-    * If she chooses to stand, she will not receive any more cards this round, so her score is fixed. The game moves on to the next player.
-    * If she chooses to hit, the dealer will deal her another card, face up, and her score increases. She will then be given the option to hit or stand again.
-    * If her score exceeds 21, she has "busted" and immediately loses this round - play will continue with the next player.
-    * Essentially, the player can continue to hit until she either decides to stand, or busts.
+   -  If she chooses to stand, she will not receive any more cards this round, so her score is fixed. The game moves on to the next player.
+   -  If she chooses to hit, the dealer will deal her another card, face up, and her score increases. She will then be given the option to hit or stand again.
+   -  If her score exceeds 21, she has "busted" and immediately loses this round - play will continue with the next player.
+   -  Essentially, the player can continue to hit until she either decides to stand, or busts.
 4. The hit-or-stand process is then repeated for each other player.
 5. Once all players are done, it is the dealer's turn to play. First, he turns his face-down card over. Then he hits until his score is 17 or higher. The dealer cannot decide to hit or stand arbitrarily. If his score is less than 17, he must hit. If it is 17 or higher, he must stand.
 6. If the dealer busts, any players who did not bust earlier win this round. Otherwise, each player's score is compared to that of the dealer. A player wins if he has a higher score than the dealer, loses if he has a lower score, and "pushes" (ties) if he has the same score.
@@ -45,44 +44,44 @@ At the end of the 4 week project, you will be graded on the following deliverabl
 
 ### Milestone 3
 
-#### Implement Advanced Play   18 pts (6 each)
+#### Implement Advanced Play 18 pts (6 each)
 
 In this Milestone, you will be implementing advanced play. You are to implement the following mechanisms:
 
-- Splitting
-- Doubling Down
-- Insurance
+-  Splitting
+-  Doubling Down
+-  Insurance
 
 A description of each one of these mechanisms is given in the wikipedia article on blackjack.
 
-* [2.1 Player decisions](https://en.wikipedia.org/wiki/Blackjack#Player_decisions)
-* [2.2 Insurance](https://en.wikipedia.org/wiki/Blackjack#Insurance)
+-  [2.1 Player decisions](https://en.wikipedia.org/wiki/Blackjack#Player_decisions)
+-  [2.2 Insurance](https://en.wikipedia.org/wiki/Blackjack#Insurance)
 
 #### Hints System 12 pts
 
-The next step is to build in a hints system. Here you will advise the players what their “best” course of strategy is. You can use any strategy you choose, but be prepared to defend your decision! 
+The next step is to build in a hints system. Here you will advise the players what their “best” course of strategy is. You can use any strategy you choose, but be prepared to defend your decision!
 
-You can start off your hints system by just giving general playing advice based on the rules of the game, and maybe your feelings of what might be a good system, perhaps from your very limited experiences from your experiments above. 
+You can start off your hints system by just giving general playing advice based on the rules of the game, and maybe your feelings of what might be a good system, perhaps from your very limited experiences from your experiments above.
 
 Later on, it is probably a good idea to include some probability into the mix. Eventually, a card counting strategy (remembering what cards have come out) would be best.
 
 Choose your implementation:
 
-* Basic hints - advise the player on what to do given the basic rules of blackjack: + 6/12 pts
-* Basic static probabilities based on hand values - you can look up the decision tables on many websites across the web: +8/12 pts
-* Card counting + probability based on card counting - this requires keeping track of the cards that have been dealt thus far, as well as the cards that are currently face up  +12/12 pts
-    * See: [4.3.1 Card counting](https://en.wikipedia.org/wiki/Blackjack#Card_counting)
+-  Basic hints - advise the player on what to do given the basic rules of blackjack: + 6/12 pts
+-  Basic static probabilities based on hand values - you can look up the decision tables on many websites across the web: +8/12 pts
+-  Card counting + probability based on card counting - this requires keeping track of the cards that have been dealt thus far, as well as the cards that are currently face up +12/12 pts
+   -  See: [4.3.1 Card counting](https://en.wikipedia.org/wiki/Blackjack#Card_counting)
 
 #### Documentation 5 pts
 
-Finally, you should provide documentation both in line (as comments) and external (as a text document). Comments should describe your algorithms briefly so that the grader understand what you did. 
-
+Finally, you should provide documentation both in line (as comments) and external (as a text document). Comments should describe your algorithms briefly so that the grader understand what you did.
 
 Blackjack.txt should include your rationale for making the decisions that you did for the hint system, and should be more in depth. Describe how your implementation deviates from your design submitted in MS2. You should also describe any problems and challenges you encountered, and any lessons learned.
 
 You should submit:
-* `Blackjack.java` - full game play with advanced features, wagering, and hint system
-* `Deck.java`
-* `Card.java`
-* Blackjack.txt - documentation file
-* Any other supporting files necessary to compile and run your program.
+
+-  `Blackjack.java` - full game play with advanced features, wagering, and hint system
+-  `Deck.java`
+-  `Card.java`
+-  Blackjack.txt - documentation file
+-  Any other supporting files necessary to compile and run your program.

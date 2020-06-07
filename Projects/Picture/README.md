@@ -9,6 +9,8 @@ The archive `bookClasses-3-9-10.zip` is needed to compile the project. To use, u
 If it does not compile, you may need to add the `.jar` files into your classpath.
 
 ## Objective
+
 Complete these classes:
-- [Milestone2.java](src/Milestone2.java)
-- [MyPicture.java](src/MyPicture.java)
+
+-  [Milestone2.java](src/Milestone2.java)
+-  [MyPicture.java](src/MyPicture.java)

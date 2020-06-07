@@ -4,7 +4,7 @@
 
 Please read this document in its entirety, before you start work. Understand what you need to hand in, and ask questions early and often.
 
-In this project you will be using the knowledge you gained from lectures and homeworks and applying them to a lengthier programming assignment. The answers to some of your questions do not strictly reside in this document. You are encouraged to look at other sources for inspiration. 
+In this project you will be using the knowledge you gained from lectures and homeworks and applying them to a lengthier programming assignment. The answers to some of your questions do not strictly reside in this document. You are encouraged to look at other sources for inspiration.
 
 This semester’s project will involve the casino game of blackjack. This is an individual project, and as such you will be held to the University’s academic integrity policies. You are welcome to discuss strategies and ideas with other students (and will be encouraged to in recitation), but you must code the project on your own.
 
@@ -25,10 +25,10 @@ Each round of simplified blackjack proceeds as follows:
 1. The dealer shuffles the deck and deals two cards "face up" (with the front of the card showing) to each player.
 2. The dealer deals one card "face down" (with only the back showing) and one card "face up" to himself.
 3. The dealer asks the first player whether she wishes to "hit" (receive another card) or "stand" (not receive any more cards).
-    * If she chooses to stand, she will not receive any more cards this round, so her score is fixed. The game moves on to the next player.
-    * If she chooses to hit, the dealer will deal her another card, face up, and her score increases. She will then be given the option to hit or stand again.
-    * If her score exceeds 21, she has "busted" and immediately loses this round - play will continue with the next player.
-    * Essentially, the player can continue to hit until she either decides to stand, or busts.
+   -  If she chooses to stand, she will not receive any more cards this round, so her score is fixed. The game moves on to the next player.
+   -  If she chooses to hit, the dealer will deal her another card, face up, and her score increases. She will then be given the option to hit or stand again.
+   -  If her score exceeds 21, she has "busted" and immediately loses this round - play will continue with the next player.
+   -  Essentially, the player can continue to hit until she either decides to stand, or busts.
 4. The hit-or-stand process is then repeated for each other player.
 5. Once all players are done, it is the dealer's turn to play. First, he turns his face-down card over. Then he hits until his score is 17 or higher. The dealer cannot decide to hit or stand arbitrarily. If his score is less than 17, he must hit. If it is 17 or higher, he must stand.
 6. If the dealer busts, any players who did not bust earlier win this round. Otherwise, each player's score is compared to that of the dealer. A player wins if he has a higher score than the dealer, loses if he has a lower score, and "pushes" (ties) if he has the same score.
@@ -46,30 +46,24 @@ At the end of the 4 week project, you will be graded on the following deliverabl
 
 ### Milestones
 
-In order to help you make forward progress, you MUST complete one of each of these milestones every week. In fact, it is advisable to go ahead  and complete milestones earlier than the posted times. More Milestones will be released in the near future.
+In order to help you make forward progress, you MUST complete one of each of these milestones every week. In fact, it is advisable to go ahead and complete milestones earlier than the posted times. More Milestones will be released in the near future.
 
 #### Week 1:
 
 1. Complete the class definitions for `Card.java` and `Deck.java`. Write a main() method in a file called Blackjack.java that shows you have tested your `Card.java` and `Deck.java` code thoroughly. The description for the instance methods and fields are in the files attached to this assignment.
 
 2. Write in a design document (text file) your general algorithm for how you would create a simple blackjack game main loop with wagering for two players (and the dealer). Describe your inputs and outputs as well as any error conditions that may occur. You should include when you would create objects and when you would call instance methods. Your algorithm should cover all of the rules listed above for the game of blackjack. You MAY include a flowchart to better describe your algorithm. You should (minimally) answer the following questions:
-    * What is the condition of the main loop? When does it stop?
-    * How do you figure out who has won?
-    * How do you calculate earnings/losses per player?
-    * How would your algorithm change to accommodate more than 2 players?
+   -  What is the condition of the main loop? When does it stop?
+   -  How do you figure out who has won?
+   -  How do you calculate earnings/losses per player?
+   -  How would your algorithm change to accommodate more than 2 players?
 
 ### Deliverables this week:
 
 You should hand in the following files on sakai
-* `Card.java` (completed)
-* `Deck.java` (completed)
-* `Blackjack.java` (completed with testing code in `main()`)
-* blackjack.txt (design document)
-* Any other files you need to support the above.
 
-### Additional resources for assignment
-
-[Card.java](Card.java)
-
-[Deck.java](Deck.java)
-
+-  `Card.java` (completed)
+-  `Deck.java` (completed)
+-  `Blackjack.java` (completed with testing code in `main()`)
+-  blackjack.txt (design document)
+-  Any other files you need to support the above.

@@ -51,6 +51,8 @@ User entered bad input.
 RESULT: 4.6
 ```
 
+---
+
 ### Problem 2
 
 Write your code in the file `TwoSmallest.java`. Write your test cases in `assign2.txt`.
@@ -65,6 +67,7 @@ Ask the user for the following information, **in this order**:
 Compute and output the smallest and second-smallest real number, **in that order**. It is possible for the smallest and second-smallest numbers to be the same (if the sequence contains duplicate numbers).
 
 Example:
+
 ```
 java TwoSmallest
 
@@ -82,6 +85,8 @@ RESULT: 8.0
 RESULT: 10.0
 ```
 
+---
+
 ### Problem 3
 
 Write your code in the file `NthPrime.java`. Write your test cases in `assign4-testcases.txt`.
@@ -97,22 +102,14 @@ java NthPrime
 
 10
 
-RESULT: 29 
+RESULT: 29
 ```
+
+---
 
 Submit the following files:
 
-* Scores.java
-
-
-* TwoSmallest.java
-
-
-* NthPrime.java
-
-
-* assign2.txt
-
-## Additional resources for assignment
-
-[sample-testcases.txt](sample-testcases.txt)
+-  Scores.java
+-  TwoSmallest.java
+-  NthPrime.java
+-  assign2.txt

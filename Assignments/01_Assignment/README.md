@@ -11,6 +11,7 @@ Submit problem analysis and test cases for this assignment in a file called `ass
 Write and submit your code in a file called `Sum.java`. Use the IO module to read inputs. Use `IO.outputIntAnswer()` to print your answer (refer to the documentation below for usage instructions).
 
 Ask the user for 2 integers. Output the sum of those 2 numbers. Example:
+
 ```
 Enter the first number:
 5
@@ -19,6 +20,8 @@ Enter the second number:
 
 Result: 2
 ```
+
+---
 
 ### Problem 2
 
@@ -54,13 +57,15 @@ The polynomial is:
 x^3 - 4x^2 - 11x + 30
 ```
 
+---
+
 ### Problem 3
 
 Write and submit your code in a file called `Intersect.java`. Use the IO module to read inputs. Use `System.out.println()` to print your answer.
 
 Write a program that calculates the intersection between 2 equations:
 
-a degree-2 (quadratic) polynomial i.e.  
+a degree-2 (quadratic) polynomial i.e.
 
 ```
 y = dx^2 + fx + g
@@ -99,17 +104,13 @@ The intersection(s) is/are:
 (-0.20,2.8)
 ```
 
+---
+
 For this assignment, you should be submitting 4 files:
 
 1. Sum.java
-
-
 2. Poly.java
-
-
 3. Intersect.java
-
-
 4. assign1.txt
 
 Failure to follow directions will result in point penalties.

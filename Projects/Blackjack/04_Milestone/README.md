@@ -3,7 +3,6 @@
 ## Project Description
 
 Attached is a GUI Framework and documentation on how to use it. You will get a maximum of 20 pts for your implementation. Much of the code can be refactored from your implementation in MS3. (Especially `BlackJack.main()` and the Deck/Player/Hand classes
- 
 
 You will be given a shell of a GUI. Here you can fill in as much or as little of your game engine that you wish. 20 pts is only for the base GUI (meaning the player can choose to hit/stand, and you report the result of the round). If you implement any of the other features you’ve developed in the sections above as a GUI, you are welcome to, but it is for your own enjoyment and sense of fulfillment.
 
@@ -25,7 +24,7 @@ It is highly recommended that you complete the code in the following order, test
 
 Use the following algorithms:
 
-**Deck constructor**
+`Deck constructor`
 
 ```
 create an array to hold cards
@@ -35,14 +34,15 @@ for each possible suit (spades, hearts, clubs, diamonds)
 record that there are 52 cards in the deck
 ```
 
-**Deck.shuffle**
+`Deck.shuffle`
+
 ```
 for each card c in deck d:
 	choose a random position p in the deck (how to use Random)
 	swap c with the card at position p
 ```
 
-**Hand.getScore**
+`Hand.getScore`
 
 ```
 add up the values of the cards in the hand
@@ -51,7 +51,8 @@ if there is an ace and changing the ace's value from 1 to 11 would increase the 
 	increase the score by 10
 ```
 
-**Player.startRound**
+`Player.startRound`
+
 ```
 if the player is the dealer,
 	deal one card FACE UP and one card FACE DOWN to the player
@@ -59,7 +60,8 @@ else
 	deal two cards FACE UP to the player
 ```
 
-**Player.playRound**
+`Player.playRound`
+
 ```
 if the player is the dealer,
 	draw cards until score is at least 17
@@ -72,7 +74,8 @@ else
 		display message that user busted and therefore lost this round
 ```
 
-**Player.finishRound**
+`Player.finishRound`
+
 ```
 if the player is not the dealer,
 	if busted
@@ -84,7 +87,8 @@ if the player is not the dealer,
 discard all cards
 ```
 
-**Blackjack.main**
+`Blackjack.main`
+
 ```
 ask the user how many players want to play
 create Player objects for each player (ask user for player's name) and the dealer
@@ -94,7 +98,7 @@ until the user wants to quit
 close the window
 ```
 
-**Blackjack.playRound**
+`Blackjack.playRound`
 
 ```
 create and shuffle a deck

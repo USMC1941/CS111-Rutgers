@@ -9,16 +9,17 @@ Refer to our [Programming Assignments FAQ](https://introcs.cs.rutgers.edu/assign
 Write 2 programs and submit on Autolab. We provide the files [`PolygonTransform.java`](PolygonTransform.java), and [`Sierpinski.java`](Sierpinski.java). For each problem update and submit the corresponding file.
 
 Observe the following rules:
-- DO NOT add the project or package statements.
-- DO NOT change the class name
-- DO NOT change the headers of ANY of the given methods
-- DO NOT add any new class fields
-- DO NOT use [`System.exit()`](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/System.html#exit(int))
-- ONLY display the result as specified by the example for each problem.
-- DO NOT print other messages, follow the examples for each problem.
-- USE `StdIn`, `StdOut`, and `StdDraw` libraries.
 
-1. *Polygon transform* (25 points). Write a library of static methods that performs various geometric transforms on polygons. Mathematically, a polygon is defined by its sequence of vertices `(x_0, y_0)`, `(x_1, y_1)`, `(x_2, y_2)`, ... In Java, we will represent a polygon by storing the x– and y-coordinates of the vertices in two parallel arrays `x[]` and `y[]`.
+-  DO NOT add the project or package statements.
+-  DO NOT change the class name
+-  DO NOT change the headers of ANY of the given methods
+-  DO NOT add any new class fields
+-  DO NOT use [`System.exit()`](<https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/System.html#exit(int)>)
+-  ONLY display the result as specified by the example for each problem.
+-  DO NOT print other messages, follow the examples for each problem.
+-  USE `StdIn`, `StdOut`, and `StdDraw` libraries.
+
+1. _Polygon transform_ (25 points). Write a library of static methods that performs various geometric transforms on polygons. Mathematically, a polygon is defined by its sequence of vertices `(x_0, y_0)`, `(x_1, y_1)`, `(x_2, y_2)`, ... In Java, we will represent a polygon by storing the x– and y-coordinates of the vertices in two parallel arrays `x[]` and `y[]`.
 
    ![Polygon 1](img/polygon-1.png "Polygon 1")
 
@@ -27,24 +28,32 @@ Observe the following rules:
    double x[] = { 0, 1, 1, 0 };
    double y[] = { 0, 0, 2, 1 };
    ```
+
    Three useful geometric transforms are scale, translate and rotate.
-   - Scale the coordinates of each vertex `(x_i, y_i)` by a factor `α`.
-   ```
-   x'_i = α x_i
-   y'_i = α y_i
-   ```
-   - Translate each vertex `(x_i, y_i)` by a given offset `(dx, dy)`.
-   ```
-   x'_i = x_i + dx
-   y'_i = y_i + dy
-   ```
-   - Rotate each vertex `(x_i, y_i)` by `θ` degrees counterclockwise, around the origin.
-   ```
-   x'_i = x_i cos θ – y_i sin θ
-   y'_i = y_i cos θ + x_i sin θ
-   ```
+
+   -  Scale the coordinates of each vertex `(x_i, y_i)` by a factor `α`.
+
+      ```
+      x'_i = α x_i
+      y'_i = α y_i
+      ```
+
+   -  Translate each vertex `(x_i, y_i)` by a given offset `(dx, dy)`.
+
+      ```
+      x'_i = x_i + dx
+      y'_i = y_i + dy
+      ```
+
+   -  Rotate each vertex `(x_i, y_i)` by `θ` degrees counterclockwise, around the origin.
+
+      ```
+      x'_i = x_i cos θ – y_i sin θ
+      y'_i = y_i cos θ + x_i sin θ
+      ```
 
    Write a two-dimensional transformation library by implementing the following API:
+
    ```java
    public class PolygonTransform {
 
@@ -146,31 +155,31 @@ Observe the following rules:
    StdDraw.polygon(x, y);
    ```
 
-2. *Sierpinski* (30 points). The Sierpinski triangle is an example of a fractal pattern like the H-tree pattern from Section 2.3 of the textbook.
+2. _Sierpinski_ (30 points). The Sierpinski triangle is an example of a fractal pattern like the H-tree pattern from Section 2.3 of the textbook.
 
-   - Order 1
+   -  Order 1
 
-   ![Order 1](img/sierpinski1.png "Order 1")
+      ![Order 1](img/sierpinski1.png "Order 1")
 
-   - Order 2
+   -  Order 2
 
-   ![Order 2](img/sierpinski2.png "Order 2")
+      ![Order 2](img/sierpinski2.png "Order 2")
 
-   - Order 3
+   -  Order 3
 
-   ![Order 3](img/sierpinski3.png "Order 3")
+      ![Order 3](img/sierpinski3.png "Order 3")
 
-   - Order 4
+   -  Order 4
 
-   ![Order 4](img/sierpinski4.png "Order 4")
+      ![Order 4](img/sierpinski4.png "Order 4")
 
-   - Order 5
+   -  Order 5
 
-   ![Order 5](img/sierpinski5.png "Order 5")
+      ![Order 5](img/sierpinski5.png "Order 5")
 
-   - Order 6
+   -  Order 6
 
-   ![Order 6](img/sierpinski6.png "Order 6")
+      ![Order 6](img/sierpinski6.png "Order 6")
 
    The Polish mathematician Wacław Sierpiński described the pattern in 1915, but it has appeared in Italian art since the 13th century. Though the Sierpinski triangle looks complex, it can be generated with a short recursive function. Your main task is to write a recursive function `sierpinski()` that plots a Sierpinski triangle of order n to standard drawing. Think recursively: `sierpinski()` should draw one filled equilateral triangle (pointed downwards) and then call itself recursively three times (with an appropriate stopping condition). It should draw 1 filled triangle for `n = 1`; 4 filled triangles for `n = 2`; and 13 filled triangles for `n = 3`; and so forth.
 
@@ -223,15 +232,11 @@ Observe the following rules:
       }
    }
    ```
+
    Restrictions: You may not change either the scale or size of the drawing window.
 
 ## Before submission
+
 4. Collaboration policy. Read our collaboration policy [here](https://introcs.cs.rutgers.edu/#academic-integrity).
 5. Update `@author`. Update the `@author` tag of the files with your name, email and netid.
 6. Submitting the assignment. Submit `PolygonTransform.java`, and `Sierpinski.java` separately via the web submission system called Autolab. To do this, click the Assignments link from the course website; click the Submit link for that assignment.
-
-## Getting help
-
-If anything is unclear, don’t hesitate to drop by office hours or post a question on Piazza. Find instructors office hours by clicking the [Staff](https://introcs.cs.rutgers.edu/staff/) link from the course website. You are welcome to ANY professor office hours.
-
-In addition to office hours we have the [CAVE](https://resources.cs.rutgers.edu/docs/rooms-equipment/cave/) (Collaborative Academic Versatile Environment), a community space staffed with lab assistants which are undergraduate students further along the CS major to answer questions.
