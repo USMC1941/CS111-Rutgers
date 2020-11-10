@@ -1,6 +1,6 @@
 # Functions and Recursion – 70 course points
 
-write a library of `static` methods to generate and analyze weather forecasts.
+Write a library of `static` methods to generate and analyze weather forecasts.
 
 ## Programming
 
@@ -24,7 +24,7 @@ a collection of observations generated sequentially through time. The special fe
 
 Since we are just beginning as weather forecasters, we will simplify our predictions to just whether measurable precipitation will fall from the sky. If there is measurable precipitation, we call it a "wet" day. Otherwise, we call it a "dry" day.
 
-## Weather Persistence
+### Weather Persistence
 
 To help with understanding relationships and sequencing events through time, here’s a simple pseudocode that shows what it means for precipitation to be persistent from one day to the next.
 
