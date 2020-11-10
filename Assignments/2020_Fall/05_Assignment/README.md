@@ -22,7 +22,7 @@ Observe the following rules:
 A weather generator produces a "synthetic" time series of weather data for a location based on the statistical characteristics of observed weather at that location. You can think of a weather generator as being a simulator of future weather based on observed past weather. A time series is
 a collection of observations generated sequentially through time. The special feature of a time series is that successive observations are usually expected to be dependent. In fact, this dependence is often exploited in forecasting.
 
-Since we are just beginning as weather forecasters, we will simplify our predictions to just whether measurable precipitation will fall from the sky. If there is measurable precipitation, we call it a “wet” day. Otherwise, we call it a “dry” day.
+Since we are just beginning as weather forecasters, we will simplify our predictions to just whether measurable precipitation will fall from the sky. If there is measurable precipitation, we call it a "wet" day. Otherwise, we call it a "dry" day.
 
 ## Weather Persistence
 
@@ -46,7 +46,7 @@ used in the simulation need to be associated with both a location and a time of 
 
 The table below lists the probabilities that a day will be wet given that the previous day was dry
 for each month for a weather station near Norman, OK. This table gives the probability of a change
-from dry to wet. These are “real” numbers that reflect how often the weather changed from dry to wet
+from dry to wet. These are "real" numbers that reflect how often the weather changed from dry to wet
 in that specific location, during the month indicated, over the 30-year period from 1970-2000.
 
 ```
@@ -82,9 +82,9 @@ ELSE
 ENDIF
 ```
 
-If it’s a dry day, we want the outcome to simulate “no change” 88% of the time and “change” 12% of the time. A common practice would be to use a random number generator to generate some value between 0 and 1. If the random value is less than `.88`, then there would be no change, and if it is greater than `.88` then the weather changes to rain.
+If it’s a dry day, we want the outcome to simulate "no change" 88% of the time and "change" 12% of the time. A common practice would be to use a random number generator to generate some value between 0 and 1. If the random value is less than `.88`, then there would be no change, and if it is greater than `.88` then the weather changes to rain.
 
-If it’s a wet day, we want to simulate “no change” 45% of the time and “change” 55% of the time. To do this with our random number generator, we say there is “no change” if random number is less than `.45` and a change to dry if it is greater.
+If it’s a wet day, we want to simulate "no change" 45% of the time and "change" 55% of the time. To do this with our random number generator, we say there is "no change" if random number is less than `.45` and a change to dry if it is greater.
 
 ### Weather generator
 
@@ -95,7 +95,7 @@ Imagine you are a farmer. Does knowing the number of wet or dry days tell the wh
 The transition probabilities that we have used for Norman, OK are based on historical data, and you might use them to get a sense for the likelihood certain weather phenomena in the near future. For instance, a farmer might want to run many, many simulations to get an idea of the likelihood of going 20 or more days without rain, and the results might influence the crops that he or she plants.
 
 Just as we can base the transition probabilities on historical data, we can also base them on future predictions. For instance, the National Center for Atmospheric Research (NCAR) simulates weather as it responds to assumptions
-about how various “forcings” (e.g, greenhouse gasses) will evolve in the future. Typically, these models couple an atmospheric model with an ocean model, but more recent versions, the so-called Earth system models, incorporate
+about how various "forcings" (e.g, greenhouse gasses) will evolve in the future. Typically, these models couple an atmospheric model with an ocean model, but more recent versions, the so-called Earth system models, incorporate
 more components including land use, sea and land ice, etc. The models can be used to predict future precipitation patterns and transition probabilities that are based on these forecasts, rather than past data.
 The weather generator methods you will be writing for this assignment will:
 
@@ -168,7 +168,7 @@ public static void main(String[] args) {
    double[][] wetwet = new double[numberOfRows][numberOfColumns];
    populateTransitionProbabilitiesArrays(drywet, wetwet, numberOfRows);
 
-   /*** WRITE YOUR CODE BELLOW THIS LINE. DO NOT erase any of the lines above. ***/
+   /*** WRITE YOUR CODE BELOW THIS LINE. DO NOT erase any of the lines above. ***/
 
    // Read command line inputs
    double longitude = Double.parseDouble(args[0]);
