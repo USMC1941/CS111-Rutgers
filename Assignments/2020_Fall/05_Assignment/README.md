@@ -49,17 +49,15 @@ for each month for a weather station near Norman, OK. This table gives the proba
 from dry to wet. These are "real" numbers that reflect how often the weather changed from dry to wet
 in that specific location, during the month indicated, over the 30-year period from 1970-2000.
 
-```
-January	February	March	April	May	June	July	August	September	October	November	December
-0.27	   0.33	   0.40	0.46	0.43	0.28	0.12	0.17	   0.23	      0.21	   0.28	   0.27
-```
+| January | February | March | April | May  | June | July | August | September | October | November | December |
+| ------- | -------- | ----- | ----- | ---- | ---- | ---- | ------ | --------- | ------- | -------- | -------- |
+| 0.27    | 0.33     | 0.40  | 0.46  | 0.43 | 0.28 | 0.12 | 0.17   | 0.23      | 0.21    | 0.28     | 0.27     |
 
 The next table lists the probabilities that a day will be wet given that the previous day was wet for the same weather station near Norman, OK. This table gives the probability that the weather remains wet from one day to the next.
 
-```
-January	February	March	April	May	June	July	August	September	October	November	December
-0.55	   0.58	   0.61	0.69	0.73	0.62	0.45	0.55	   0.58	      0.55	   0.59	   0.55
-```
+| January | February | March | April | May  | June | July | August | September | October | November | December |
+| ------- | -------- | ----- | ----- | ---- | ---- | ---- | ------ | --------- | ------- | -------- | -------- |
+| 0.55    | 0.58     | 0.61  | 0.69  | 0.73 | 0.62 | 0.45 | 0.55   | 0.58      | 0.55    | 0.59     | 0.55     |
 
 Armed with these probabilities, we can turn our simulation into a weather generator for this location. Here’s what it would look like for July in Norman, OK.
 
@@ -94,14 +92,13 @@ Imagine you are a farmer. Does knowing the number of wet or dry days tell the wh
 
 The transition probabilities that we have used for Norman, OK are based on historical data, and you might use them to get a sense for the likelihood certain weather phenomena in the near future. For instance, a farmer might want to run many, many simulations to get an idea of the likelihood of going 20 or more days without rain, and the results might influence the crops that he or she plants.
 
-Just as we can base the transition probabilities on historical data, we can also base them on future predictions. For instance, the National Center for Atmospheric Research (NCAR) simulates weather as it responds to assumptions
-about how various "forcings" (e.g, greenhouse gasses) will evolve in the future. Typically, these models couple an atmospheric model with an ocean model, but more recent versions, the so-called Earth system models, incorporate
-more components including land use, sea and land ice, etc. The models can be used to predict future precipitation patterns and transition probabilities that are based on these forecasts, rather than past data.
+Just as we can base the transition probabilities on historical data, we can also base them on future predictions. For instance, the National Center for Atmospheric Research (NCAR) simulates weather as it responds to assumptions about how various "forcings" (e.g, greenhouse gasses) will evolve in the future. Typically, these models couple an atmospheric model with an ocean model, but more recent versions, the so-called Earth system models, incorporate more components including land use, sea and land ice, etc. The models can be used to predict future precipitation patterns and transition probabilities that are based on these forecasts, rather than past data.
+
 The weather generator methods you will be writing for this assignment will:
 
-1. predict future precipitation pattern for one month: `oneMonthGenerator`
-2. find the number of wet or dry days in a given month’s forecast: `numberOfWetDryDays`
-3. find the longest wet or dry spell in a given month’s forecast: `lengthOfLongestWetDrySpell`
+1. Predict future precipitation pattern for one month: `oneMonthGenerator`
+2. Find the number of wet or dry days in a given month’s forecast: `numberOfWetDryDays`
+3. Find the longest wet or dry spell in a given month’s forecast: `lengthOfLongestWetDrySpell`
 
 ### Future transition probability table as a 2D array
 
@@ -109,10 +106,9 @@ The `oneMonthGenerator` method receives as arguments the transition probability 
 Each table row corresponds to a location (longitude, latitude) in the USA and contains the transition probabilities
 for each month of the year.
 
-```
-Longitude	Latitude	January	February	March	April	May	June	July	August	September	October	November	December
--97.58	   26.02	   0.76	   0.75	   0.77	0.74	0.80	0.86	0.94	0.97	   0.89	      0.77	   0.74	   0.77
-```
+| Longitude | Latitude | January | February | March | April | May  | June | July | August | September | October | November | December |
+| --------- | -------- | ------- | -------- | ----- | ----- | ---- | ---- | ---- | ------ | --------- | ------- | -------- | -------- |
+| -97.58    | 26.02    | 0.76    | 0.75     | 0.77  | 0.74  | 0.80 | 0.86 | 0.94 | 0.97   | 0.89      | 0.77    | 0.74     | 0.77     |
 
 Following are the methods to be completed in `WeatherGenerator.java`:
 
@@ -151,7 +147,7 @@ public class WeatherGenerator {
 }
 ```
 
-Use the main method as a driver to test your methods. To generate the weather for location at longitude -98.76 and latitude 26.70 for the month of February do:
+Use the `main` method as a driver to test your methods. To generate the weather for location at longitude -98.76 and latitude 26.70 for the month of February do:
 
 ```sh
 java WeatherGenerator111 -98.76 26.70 3
