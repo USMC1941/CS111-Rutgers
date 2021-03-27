@@ -19,7 +19,7 @@ Observe the following rules:
 
 Write a program [`RURottenTomatoes.java`](RURottenTomatoes.java) that creates a 2 dimensional integer array of movie ratings from the command line arguments and displays the index of the movie that has the highest sum of ratings. Ratings range from 1 to 5 (inclusive). The rows of the 2D array correspond to movie reviewers and the columns of the 2D array correspond to movies. The reviewer at index 2 gave movie at index 0 a rating of 4. Take a look at the following example for an explanation on the command line arguments sequence.
 
-![RU Rotten Tomatoes](RURottenTomatoes.png)
+![RU Rotten Tomatoes](img/RURottenTomatoes.png)
 
 The first argument corresponds to the number of reviewers and the second argument corresponds to the number of movies (the dimensions of the 2D integer array). Following are the movie ratings in a row-major order. This means that the first row is filled first, then the second row, etc.
 
