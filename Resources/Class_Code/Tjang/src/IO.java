@@ -8,10 +8,9 @@ import java.util.Objects;
  * CS111 input/output module. This module serves two purposes:
  *
  * <ul>
- * <li>It provides input methods which make it easy to read data from the
- * keyboard and force the user to enter data of a specific type.
- * <li>It provides output methods which allow us to grade your programs using a
- * grading script.
+ *   <li>It provides input methods which make it easy to read data from the keyboard and force the
+ *       user to enter data of a specific type.
+ *   <li>It provides output methods which allow us to grade your programs using a grading script.
  * </ul>
  */
 public class IO {
@@ -118,8 +117,8 @@ public class IO {
     }
 
     /**
-     * Ask (and force) the user to enter text that can be interpreted as a boolean.
-     * "true", "t", "yes", "y", "false", "f", "no", and "n" are valid responses.
+     * Ask (and force) the user to enter text that can be interpreted as a boolean. "true", "t",
+     * "yes", "y", "false", "f", "no", and "n" are valid responses.
      *
      * @return boolean interpretation of text entered.
      */
@@ -134,10 +133,14 @@ public class IO {
             }
 
             if (s != null) {
-                if (s.equalsIgnoreCase("yes") || s.equalsIgnoreCase("y") || s.equalsIgnoreCase("true")
+                if (s.equalsIgnoreCase("yes")
+                        || s.equalsIgnoreCase("y")
+                        || s.equalsIgnoreCase("true")
                         || s.equalsIgnoreCase("t")) {
                     return true;
-                } else if (s.equalsIgnoreCase("no") || s.equalsIgnoreCase("n") || s.equalsIgnoreCase("false")
+                } else if (s.equalsIgnoreCase("no")
+                        || s.equalsIgnoreCase("n")
+                        || s.equalsIgnoreCase("false")
                         || s.equalsIgnoreCase("f")) {
                     return false;
                 } else {
@@ -188,8 +191,7 @@ public class IO {
     }
 
     /**
-     * Print a boolean to the screen (as "true" or "false") and/or send it to the
-     * grading script.
+     * Print a boolean to the screen (as "true" or "false") and/or send it to the grading script.
      *
      * @param b Boolean to output.
      */
@@ -198,9 +200,8 @@ public class IO {
     }
 
     /**
-     * Print an error message to the screen and/or send it to the grading script.
-     * This method does not take any inputs - it always prints the same error
-     * message.
+     * Print an error message to the screen and/or send it to the grading script. This method does
+     * not take any inputs - it always prints the same error message.
      */
     public static void reportBadInput() {
         System.out.println("User entered bad input.");
